@@ -1,0 +1,138 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ************** */
+/*  CUSTOM FONTS  */
+/* ************** */
+
+/* MINDFUTURE FONT */
+@font-face {
+    font-family: Mindfuture;
+    src: url('~/assets/fonts/Mindfuture-Bold.otf') format('opentype');
+}
+
+/* SATOSHI FONT */
+@font-face {
+    font-family: "Satoshi";
+    src: url("~/assets/fonts/Satoshi-Black.otf") format("opentype");
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Satoshi";
+    src: url("~/assets/fonts/Satoshi-BlackItalic.otf") format("opentype");
+    font-weight: 900;
+    font-style: italic;
+}
+@font-face {
+    font-family: "Satoshi";
+    src: url("~/assets/fonts/Satoshi-Bold.otf") format("opentype");
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Satoshi";
+    src: url("~/assets/fonts/Satoshi-BoldItalic.otf") format("opentype");
+    font-weight: 700;
+    font-style: italic;
+}
+@font-face {
+    font-family: "Satoshi";
+    src: url("~/assets/fonts/Satoshi-Medium.otf") format("opentype");
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Satoshi";
+    src: url("~/assets/fonts/Satoshi-MediumItalic.otf") format("opentype");
+    font-weight: 500;
+    font-style: italic;
+}
+@font-face {
+    font-family: "Satoshi";
+    src: url("~/assets/fonts/Satoshi-Regular.otf") format("opentype");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Satoshi";
+    src: url("~/assets/fonts/Satoshi-Italic.otf") format("opentype");
+    font-weight: 400;
+    font-style: italic;
+}
+@font-face {
+    font-family: "Satoshi";
+    src: url("~/assets/fonts/Satoshi-Light.otf") format("opentype");
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Satoshi";
+    src: url("~/assets/fonts/Satoshi-LightItalic.otf") format("opentype");
+    font-weight: 300;
+    font-style: italic;
+}
+
+
+
+
+/* **************** */
+/*  CUSTOM STYLING  */
+/* **************** */
+
+body {
+    font-family: 'Satoshi', sans-serif;
+    font-size: 16px;
+
+    @apply text-body-light bg-background;
+}
+
+h1, h2, h3, h4 {
+    font-family: Mindfuture, sans-serif;
+}
+
+h1 {
+    font-size: 10vw;
+}
+
+h2 {
+    font-size: 5vw;
+}
+
+h2.no-grow {
+    font-size: 100px !important;
+}
+
+h3 {
+    font-size: 1.5vw;
+
+    @apply text-body-gray-light;
+}
+
+img.dark-overlay {
+    @apply grayscale;
+}
+
+video.fullscreen {
+    @apply absolute z-0 object-cover w-full h-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2;
+}
+
+video.fullscreen:-webkit-media-controls {
+    display: none !important;
+}
+
+/* ********** */
+/* ANIMATIONS */
+/* ********** */
+
+.text-scroll {
+    animation: scrollText 66s infinite linear;
+
+    @apply flex space-x-16 items-center justify-start whitespace-nowrap transition-all duration-1000 ease-in;
+}
+
+@keyframes scrollText {
+    from   { transform: translateX(0%); }
+    to { transform: translateX(-50%); }
+}
