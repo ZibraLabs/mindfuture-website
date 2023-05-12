@@ -11,7 +11,7 @@
                 <video src="/video/visuals1.mp4" autoplay loop muted class="h-[11vw]"></video>
             </div>
             <div>
-                <img src="/images/future.svg" class="h-[11vw]" />
+                <img src="/images/futuretext.svg" class="h-[11vw]" />
             </div>
         </div>
     </section>
