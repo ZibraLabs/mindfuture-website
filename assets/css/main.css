@@ -132,7 +132,51 @@ video.fullscreen:-webkit-media-controls {
     @apply flex space-x-16 items-center justify-start whitespace-nowrap transition-all duration-1000 ease-in;
 }
 
+.slideInLeft, .slideInRight {
+    opacity: 0;
+}
+
+.slideInLeft.animate {
+    opacity: 1;
+    animation: slideInLeft 2000ms ease-in-out;
+}
+
+.slideInRight.animate {
+    opacity: 1;
+    animation: slideInRight 2000ms ease-in-out;
+}
+
 @keyframes scrollText {
     from   { transform: translateX(0%); }
     to { transform: translateX(-50%); }
+}
+
+@keyframes slideInLeft {
+    0% {
+        opacity: 0;
+        transform: translate(-10%);
+    }
+    75% {
+        opacity: 1;
+        transform: translate(3%);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0%);
+    }
+}
+
+@keyframes slideInRight {
+    0% {
+        opacity: 0;
+        transform: translate(10%);
+    }
+    75% {
+        opacity: 1;
+        transform: translate(-3%);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0%);
+    }
 }
