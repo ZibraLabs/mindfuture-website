@@ -1,5 +1,5 @@
 <template>
-    <section class="w-full p-12">
+    <section class="w-full p-24">
         <div class="pb-8 flex items-center space-x-6">
             <Button>change mode</Button>
             <div class="text-primary">
