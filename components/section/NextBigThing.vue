@@ -1,5 +1,5 @@
 <template>
-    <section class="w-full bg-section-background h-[1000px] flex items-center justify-center relative">
+    <section class="w-full bg-section-background h-[50vw] flex items-center justify-center relative">
         <div v-slideIn>
             <h3 class="slideInLeft">we are bringing you</h3>
             <h2 class="slideInRight">the <span class="text-primary">next</span> big thing</h2>

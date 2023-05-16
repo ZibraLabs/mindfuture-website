@@ -147,12 +147,12 @@ video.fullscreen:-webkit-media-controls {
 }
 
 .bar-link {
-    @apply p-8 px-12 block relative z-10;
+    @apply p-[2vw] px-[2.2vw] block relative z-10 text-[1vw];
 }
 
 .bar-link::after {
     content: '';
-    @apply bg-gradient-to-r from-secondary to-section-background absolute top-0 bottom-0 left-0 right-0 w-0 -z-10 opacity-0;
+    @apply bg-secondary absolute top-0 bottom-0 left-0 right-0 w-0 -z-10 opacity-0;
 }
 
 .bar-link:hover {

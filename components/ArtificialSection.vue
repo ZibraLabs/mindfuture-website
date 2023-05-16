@@ -1,10 +1,10 @@
 <template>
     <div class="border-y border-border relative bg-button-background">
         <div class="flex items-stretch mx-auto border-x max-w-max border-border relative z-10 divide-x divide-border -translate-x-24" v-parallax:x="{percentMax: 8, percentMin: 6, direction: 'left'}">
-            <div class="bg-section-background p-12 px-10 max-w-[548px]">
+            <div class="bg-section-background p-12 px-10 max-w-[30vw]">
                 <strong class="uppercase">We build stuff that matter</strong>
                 <p>Id proident veniam commodo duis aliqua aliquip sit officia in sint duis voluptate labore cupidatat.</p>
-                <h2 class="text-primary no-grow">artificial</h2>
+                <h2 class="text-primary">artificial</h2>
             </div>
             <div>
                 <img class="dark-overlay h-[30vw]" src="/images/artificial.jpg" />

@@ -1,10 +1,7 @@
 <template>
     <section class="w-full p-24">
         <div class="pb-8 flex items-center space-x-6">
-            <Button>change mode</Button>
-            <div class="text-primary">
-                [ + Envisioning mode + ]
-            </div>
+            <Button>Let's get in touch</Button>
         </div>
         <div class="flex items-center justify-center w-full space-x-12">
             <div>

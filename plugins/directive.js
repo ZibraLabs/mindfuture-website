@@ -69,8 +69,31 @@ export default defineNuxtPlugin((nuxtApp) => {
             observer.observe(el);
         }
     })
-});
 
-const parallaxThis = function () {
-    
-}
+    nuxtApp.vueApp.directive('h-scroll', {
+        mounted (el, binding) {
+            el.addEventListener('wheel', (e) => {
+
+                if (el.scrollLeft == 0 && e.deltaY < 0) {
+                    console.log('go up');
+                    return;
+                }
+                
+                if (el.scrollLeft == el.clientWidth && e.deltaY > 0) {
+                    console.log('go down');
+                    return;
+                }
+                
+                const race = 50;
+
+                if (e.deltaY > 0) {
+                    el.scrollLeft += race;
+                } else {
+                    el.scrollLeft -= race;
+                }
+
+                e.preventDefault();
+            });
+        }
+    })
+});
