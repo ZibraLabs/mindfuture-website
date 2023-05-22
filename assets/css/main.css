@@ -93,11 +93,11 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-    font-size: 16vw;
+    @apply text-[28vw] lg:text-[16vw];
 }
 
 h2 {
-    font-size: 5vw;
+    @apply text-[20vw] lg:text-[5vw] leading-none;
 }
 
 h2.no-grow {
@@ -105,16 +105,14 @@ h2.no-grow {
 }
 
 h3 {
-    font-size: 1.5vw;
-
-    @apply text-body-gray-light;
+    @apply text-body-gray-light text-[6vw] lg:text-[1.5vw];
 }
 
 h4 {
-    font-size: 1vw;
-
-    @apply text-body-gray-light;
+    @apply text-body-gray-light lg:text-[1vw];
 }
+
+
 
 img.dark-overlay {
     @apply grayscale;

@@ -1,6 +1,6 @@
 <template>
-    <section class="w-full bg-section-background h-[50vw] flex items-center justify-center relative">
-        <div v-slideIn>
+    <section class="w-full bg-section-background lg:h-[50vw] flex items-center justify-center relative p-4 py-12">
+        <div v-slideIn class="space-y-8 lg:space-y-0">
             <h3 class="slideInLeft">we are bringing you</h3>
             <h2 class="slideInRight" v-parallax-mouse="{y: -0.025, x: -0.04}">the <span class="text-primary">next</span> big thing</h2>
             <h3 class="slideInLeft">and this is how</h3>

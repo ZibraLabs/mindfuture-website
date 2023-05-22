@@ -1,5 +1,5 @@
 <template>
-    <section class="w-full bg-section-background h-[50vw] flex items-center justify-center relative border-t-[0.6vw] border-button-background border-dashed">
+    <section class="w-full bg-section-background lg:h-[50vw] flex items-center justify-center relative border-t-[2vw] lg:border-t-[0.6vw] border-button-background border-dashed p-4 py-12">
         <div v-slideIn>
             <h3 class="slideInLeft text-body-gray-dark">check out</h3>
             <h2 class="slideInRight"><span class="text-body-gray-dark">our</span> <span class="text-primary">portfolio</span></h2>
