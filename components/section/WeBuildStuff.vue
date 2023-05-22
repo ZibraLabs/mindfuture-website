@@ -1,13 +1,7 @@
 <template>
-    <section class="my-32 space-y-16">
+    <section class="my-32 space-y-16" v-slideIn>
         <HardwareSection />
         <ArtificialSection />
         <SoftwareSection />
-        <!-- <div>
-            <ScrollText>artifical</ScrollText>
-        </div>
-        <div>
-            <ScrollText>software</ScrollText>
-        </div> -->
     </section>
 </template>

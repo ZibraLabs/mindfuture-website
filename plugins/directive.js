@@ -10,13 +10,14 @@ export default defineNuxtPlugin((nuxtApp) => {
 
                             let elementPos = {
                                 top: elementRect.top,
-                                bottom: elementRect.bottom
+                                bottom: elementRect.bottom,
+                                height: elementRect.height
                             }
 
                             if (elementPos.top < windowHeight && elementPos.bottom > 0) {
                                 if (binding.value.percentMax) {
-                                    let percentage = elementPos.top / windowHeight * binding.value.percentMax;
-                                    percentage + binding.value.percentMin;
+                                    let percentage = elementPos.bottom / (windowHeight + elementPos.height) * (binding.value.percentMax - binding.value.percentMin);
+                                    percentage += binding.value.percentMin;
 
                                     if (binding.arg == 'x') {
                                         if (binding.value.direction && binding.value.direction == 'right') {
@@ -26,16 +27,9 @@ export default defineNuxtPlugin((nuxtApp) => {
                                         }
                                     }
                                 }
-
-
                             }
-
-                            // console.log('top', el.getBoundingClientRect().top)
-                            // console.log('scroll', (window.scrollY + window.innerHeight));
-                            // console.log(Math.round(entry.intersectionRatio * 100), window.scrollY, el, binding);
                         });
                     } else {
-                        console.log('is not')
                         document.removeEventListener('scroll', null);
                     }
                 });
@@ -57,7 +51,7 @@ export default defineNuxtPlugin((nuxtApp) => {
                                 element.classList.add('animate');
                             }, (index+1) * 300);
                         });
-                    } 
+                    }
                     // else {
                     //     elements.forEach(element => {
                     //         element.classList.remove('animate');
@@ -73,14 +67,10 @@ export default defineNuxtPlugin((nuxtApp) => {
     nuxtApp.vueApp.directive('h-scroll', {
         mounted (el, binding) {
             el.addEventListener('wheel', (e) => {
-
                 if (el.scrollLeft == 0 && e.deltaY < 0) {
-                    console.log('go up');
                     return;
                 }
-                
                 if (el.scrollLeft == el.clientWidth && e.deltaY > 0) {
-                    console.log('go down');
                     return;
                 }
                 
@@ -96,4 +86,39 @@ export default defineNuxtPlugin((nuxtApp) => {
             });
         }
     })
+
+    nuxtApp.vueApp.directive('jump-section', {
+        mounted (el, binding) {
+            el.addEventListener('wheel', (e) => {
+                if (el.scrollTop == 0 && e.deltaY < 0) {
+                    return;
+                }
+                if (el.scrollTop >= (el.children[0].clientHeight - el.clientHeight) && e.deltaY > 0) {
+                    return;
+                }
+
+                let elementRect = el.getBoundingClientRect();
+
+                if (e.deltaY > 100) {
+                    el.scrollTop += elementRect.height;
+                } else if (e.deltaY < -100) {
+                    el.scrollTop -= elementRect.height;
+                }
+
+                e.preventDefault();
+            });
+        }
+    });
+
+    nuxtApp.vueApp.directive('parallax-mouse', {
+        mounted (el, binding) {
+            el.closest('section').addEventListener('mousemove', (e) => {
+                let valueY = e.clientY - window.innerHeight / 2;
+                let valueX = e.clientX - window.innerWidth / 2;
+
+                el.style.transform = `translateY(${valueY * binding.value.y}px) translateX(${valueX * binding.value.x}px)`;
+                
+            });
+        }
+    });
 });

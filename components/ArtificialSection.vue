@@ -1,6 +1,6 @@
 <template>
     <div class="border-y border-border relative bg-button-background">
-        <div class="flex items-stretch mx-auto border-x max-w-max border-border relative z-10 divide-x divide-border -translate-x-24" v-parallax:x="{percentMax: 8, percentMin: 6, direction: 'left'}">
+        <div class="flex items-stretch mx-auto border-x max-w-max border-border relative z-10 divide-x divide-border transition-all duration-200 translate-x-[8%]" v-parallax:x="{percentMax: 8, percentMin: 2, direction: 'left'}">
             <div class="bg-section-background p-12 px-10 max-w-[30vw]">
                 <strong class="uppercase">We build stuff that matter</strong>
                 <p>Id proident veniam commodo duis aliqua aliquip sit officia in sint duis voluptate labore cupidatat.</p>

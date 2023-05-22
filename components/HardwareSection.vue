@@ -1,6 +1,6 @@
 <template>
     <div class="border-y border-border relative bg-section-background">
-        <div class="flex items-stretch mx-auto border-x max-w-max border-border relative z-10 divide-x divide-border translate-x-24" v-parallax:x="{percentMax: 10, percentMin: 5, direction: 'right'}">
+        <div class="flex items-stretch mx-auto border-x max-w-max border-border relative z-10 divide-x divide-border transition-all duration-200 -translate-x-[5%]" v-parallax:x="{percentMax: 5, percentMin: 0, direction: 'right'}">
             <div>
                 <img class="dark-overlay h-[30vw]" src="/images/hardware.jpg" />
             </div>
