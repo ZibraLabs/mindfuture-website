@@ -84,6 +84,8 @@
 body {
     font-family: 'Satoshi', sans-serif;
     font-size: 16px;
+    overflow-x: hidden;
+    overflow-y: scroll;
 
     @apply text-body-light bg-background scroll-smooth;
 }
@@ -112,7 +114,25 @@ h4 {
     @apply text-body-gray-light lg:text-[1vw];
 }
 
-
+.viewport {
+    overflow: hidden;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+  
+.scroll-container {  
+    position: absolute;
+    width: 100vw;
+    overflow: hidden;
+    z-index: 10;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+}
 
 img.dark-overlay {
     @apply grayscale;

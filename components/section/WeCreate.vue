@@ -24,7 +24,7 @@
             <div class="flex-none w-screen h-[40vw]">
                 <div class="flex items-stretch w-full h-full bg-background">
                     <div class="flex-1 bg-body-gray-light text-3xl flex items-center justify-center">
-                        Section1
+                        We Envision
                     </div>
                     <div class="flex-1">
                     </div>
@@ -33,7 +33,7 @@
             <div class="flex-none w-screen h-[40vw]">
                 <div class="flex items-stretch w-full h-full bg-background">
                     <div class="flex-1 bg-body-gray-light text-3xl flex items-center justify-center">
-                        Section2
+                        We Connect
                     </div>
                     <div class="flex-1">
                     </div>
@@ -42,7 +42,7 @@
             <div class="flex-none w-screen h-[40vw]">
                 <div class="flex items-stretch w-full h-full bg-background">
                     <div class="flex-1 bg-body-gray-light text-3xl flex items-center justify-center">
-                        Section3
+                        We Create
                     </div>
                     <div class="flex-1">
                     </div>

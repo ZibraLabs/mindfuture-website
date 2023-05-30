@@ -13,5 +13,5 @@ export default defineNuxtConfig({
             autoprefixer: {},
         },
     },
-    plugins: ['~/plugins/directive.js']
+    plugins: ['~/plugins/directive.js', { src: '~/plugins/smoothScroll.js', mode: 'client' }]
 })
