@@ -1,5 +1,7 @@
 <template>
-    <div id="scroll-container" class="scroll-container">
-        <slot />
+    <div id="smooth-wrapper">
+        <div id="smooth-content">
+            <slot />
+        </div>
     </div>
 </template>

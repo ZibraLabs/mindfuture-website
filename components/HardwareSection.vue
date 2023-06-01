@@ -1,6 +1,6 @@
 <template>
     <div class="border-y border-border relative bg-section-background">
-        <div class="mt-[9.2vw] lg:mt-0 lg:flex lg:items-stretch mx-auto border-x lg:max-w-max border-border relative z-10 divide-x divide-border transition-all duration-200 -translate-x-[5%]" v-parallax:x="{percentMax: 5, percentMin: 0, direction: 'right'}">
+        <div class="mt-[9.2vw] lg:mt-0 lg:flex lg:items-stretch mx-auto border-x lg:max-w-max border-border relative z-10 divide-x divide-border -translate-x-[5%] hardware">
             <div>
                 <img class="dark-overlay lg:h-[30vw]" src="/images/hardware.jpg" />
             </div>

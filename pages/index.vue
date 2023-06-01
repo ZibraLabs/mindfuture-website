@@ -2,6 +2,7 @@
     <SectionHeroVideo />
     <SectionMindfutureAnimated />
     <SectionNextBigThing />
+    <SectionPillars />
     <SectionWeCreate />
     <SectionGarage />
     <SectionWeBuildStuff />

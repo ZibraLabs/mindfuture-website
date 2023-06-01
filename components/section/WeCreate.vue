@@ -1,53 +1,21 @@
 <template>
-    <!-- <section class="w-screen border-t border-border">
-        <div class="-rotate-90 origin-top-left w-[60vw] h-screen translate-y-[60vw] overflow-y-auto overflow-x-hidden bg-primary">
-            <div class="w-screen h-[40vw] bg-section-background p-8 rotate-90 origin-top-left">
-                <div class="flex items-stretch w-full h-full bg-body-light">
-                    <div class="flex-1 bg-body-gray-light">
-                    </div>
-                    <div class="flex-1">
-                    </div>
-                </div>
-            </div>
-            <div class="w-screen h-[40vw] bg-section-background p-8">
-                <div class="flex items-stretch w-full h-full bg-body-light">
-                    <div class="flex-1 bg-body-gray-light">
-                    </div>
-                    <div class="flex-1">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-    <section class="w-screen h-[40vw] overflow-auto border-t border-border scroll-smooth" v-jump-section>
-        <div class="transition-all duration-300 ease-in-out">
-            <div class="flex-none w-screen h-[40vw]">
-                <div class="flex items-stretch w-full h-full bg-background">
-                    <div class="flex-1 bg-body-gray-light text-3xl flex items-center justify-center">
+    <section class="w-screen overflow-auto scroll-smooth">
+            <div class="flex items-stretch w-full h-full bg-background border-t border-border">
+                <div class="w-3/5 bg-body-dark divide-y divide-body-gray-dark border-r border-body-gray-dark">
+                    <ScrollText>pillars</ScrollText>
+                    <div class="w-full h-[40vw] bg-body-dark text-3xl flex items-center justify-center">
                         We Envision
                     </div>
-                    <div class="flex-1">
-                    </div>
-                </div>
-            </div>
-            <div class="flex-none w-screen h-[40vw]">
-                <div class="flex items-stretch w-full h-full bg-background">
-                    <div class="flex-1 bg-body-gray-light text-3xl flex items-center justify-center">
+                    <div class="w-full h-[40vw] bg-body-dark text-3xl flex items-center justify-center">
                         We Connect
                     </div>
-                    <div class="flex-1">
-                    </div>
-                </div>
-            </div>
-            <div class="flex-none w-screen h-[40vw]">
-                <div class="flex items-stretch w-full h-full bg-background">
-                    <div class="flex-1 bg-body-gray-light text-3xl flex items-center justify-center">
+                    <div class="w-full h-[40vw] bg-body-dark text-3xl flex items-center justify-center">
                         We Create
                     </div>
-                    <div class="flex-1">
-                    </div>
+                </div>
+                <div class="w-2/5 h-full">
+                    <video class="w-full" src="/video/transparent.mov" autoplay loop muted></video>
                 </div>
             </div>
-        </div>
     </section>
 </template>

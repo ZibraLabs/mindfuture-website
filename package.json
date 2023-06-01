@@ -17,6 +17,6 @@
     "tailwindcss": "^3.3.2"
   },
   "dependencies": {
-    "gsap": "npm:@gsap/member@^3.11.5"
+    "gsap": "npm:@gsap/shockingly@^3.11.5"
   }
 }
