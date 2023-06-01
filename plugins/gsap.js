@@ -63,8 +63,8 @@ export default defineNuxtPlugin((nuxtApp) => {
             scrollTrigger: {
                 id: 'growBox',
                 trigger: '.pillar-box-section',
-                start: '0 40%',
-                end: '+=30%',
+                start: '0 60%',
+                end: '+=40%',
             },
         });
         
@@ -73,7 +73,7 @@ export default defineNuxtPlugin((nuxtApp) => {
             scrollTrigger: {
                 id: 'growBoxText',
                 trigger: '.pillar-box-section',
-                start: '22% 45%',
+                start: '20% 45%',
                 end: '+=10%',
             },
         });
