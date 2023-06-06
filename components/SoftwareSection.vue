@@ -2,7 +2,7 @@
     <div class="border-y border-border relative">
         <div class="mt-[9.2vw] lg:mt-0 lg:flex lg:items-stretch mx-auto border-x lg:max-w-max border-border relative z-10 divide-x divide-border -translate-x-[8%] software">
             <div>
-                <img class="dark-overlay lg:h-[30vw]" src="/images/software.jpg" />
+                <img class="dark-overlay lg:h-[30vw]" src="@/assets/images/software.jpg" />
             </div>
             <div class="bg-button-background p-12 px-10 lg:max-w-[30vw]">
                 <strong class="uppercase">We build stuff that matter</strong>

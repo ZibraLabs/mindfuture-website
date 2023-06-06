@@ -28,25 +28,25 @@
                         name: 'M2Call',
                         content: 'M2Call bla bla bla',
                         link: 'http://m2call.com/',
-                        image: '/images/m2call.jpeg'
+                        image: '@/assets/images/m2call.jpeg'
                     },
                     {
                         name: 'Nivo',
                         content: 'Nivo bla bla bla',
                         link: 'https://www.nivo.nu/',
-                        image: '/images/nivo.jpeg'
+                        image: '@/assets/images/nivo.jpeg'
                     },
                     {
                         name: 'Mindvision',
                         content: 'Mindvision bla bla bla',
                         link: 'https://mindvision.dk/',
-                        image: '/images/mindvision.jpeg'
+                        image: '@/assets/images/mindvision.jpeg'
                     },
                     {
                         name: 'Easy ID',
                         content: 'Easy ID bla bla bla',
                         link: '#',
-                        image: '/images/easyid.jpeg'
+                        image: '@/assets/images/easyid.jpeg'
                     },
                 ]
             }

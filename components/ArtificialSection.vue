@@ -7,7 +7,7 @@
                 <h2 class="text-primary">artificial</h2>
             </div>
             <div>
-                <img class="dark-overlay lg:h-[30vw]" src="/images/artificial.jpg" />
+                <img class="dark-overlay lg:h-[30vw]" src="@/assets/images/artificial.jpg" />
             </div>
         </div>
         <div class="w-full lg:w-1/2 absolute top-0 right-0 bg-section-background z-0 border-b border-border">

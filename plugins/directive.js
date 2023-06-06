@@ -109,24 +109,4 @@ export default defineNuxtPlugin((nuxtApp) => {
             });
         }
     });
-
-    // nuxtApp.vueApp.directive('parallax-mouse', {
-    //     mounted (el, binding) {
-    //         el.closest('section').addEventListener('mousemove', (e) => {
-    //             let valueY = e.clientY - window.innerHeight / 2;
-    //             let valueX = e.clientX - window.innerWidth / 2;
-
-    //             el.style.transform = `translateY(${valueY * binding.value.y}px) translateX(${valueX * binding.value.x}px)`;
-                
-    //         });
-    //     }
-    // });
-
-    // nuxtApp.vueApp.directive('scroll-smooth', {
-    //     mounted (el, binding) {
-    //         const scroll = new GScroll(el, 100);
-    //         scroll.init();
-    //         scroll.wheel();
-    //     }
-    // });
 });

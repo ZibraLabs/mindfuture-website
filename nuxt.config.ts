@@ -1,5 +1,8 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+    vite: {
+        assetsInclude: ['**/*.mov'],
+    },
     app: {
         head: {
             charset: 'utf-8',
