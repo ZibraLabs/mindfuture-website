@@ -20,12 +20,13 @@ export default defineNuxtPlugin((nuxtApp) => {
         ScrollTrigger.defaults({
             toggleActions: 'restart pause reverse pause',
             scrub: true,
-            markers: false,
+            markers: true,
         });
 
         growBox();
 
         parallaxGarage();
+        videoMovement();
         parallaxBuildStuff('.hardware', 20);
         parallaxBuildStuff('.artificial', -20);
         parallaxBuildStuff('.software', 30);
@@ -37,7 +38,7 @@ export default defineNuxtPlugin((nuxtApp) => {
                 trigger: '.garage-title',
                 start: '0 100%',
                 end: '100%',
-                toggleActions: 'restart pause reverse pause',
+                markers: false,
             }, // start the animation when ".box" enters the viewport (once)
             x: -200,
         });
@@ -49,10 +50,90 @@ export default defineNuxtPlugin((nuxtApp) => {
                 trigger: element,
                 start: '0 100%',
                 end: '100%',
-                toggleActions: 'restart pause reverse pause',
+                markers: false,
             }, // start the animation when ".box" enters the viewport (once)
             x: amount,
         })
+    }
+
+    function videoMovement () {
+        gsap.to('.animation-video', {
+            duration: 3,
+            scrollTrigger: {
+                id: 'animation-video',
+                trigger: '.animation-video-container',
+                pin: '.animation-video',
+                start: '0 30%',
+                end: 'bottom top+=60%',
+                markers: false,
+            }
+        });
+        gsap.fromTo('.we-envision', {opacity: 0}, {
+            opacity: 1,
+            immediateRender: false,
+            scrollTrigger: {
+                id: 'we-envision-1',
+                trigger: '.animation-video-container',
+                start: 'top 65%',
+                end: '+=20%',
+                markers: false,
+            }
+        });
+        gsap.fromTo('.we-envision', {opacity: 1}, {
+            opacity: 0,
+            immediateRender: false,
+            scrollTrigger: {
+                id: 'we-envision-0',
+                trigger: '.animation-video-container',
+                start: '50% 80%',
+                end: '+=20%',
+                markers: false,
+            }
+        });
+        gsap.fromTo('.we-connect', {opacity: 0}, {
+            opacity: 1,
+            immediateRender: false,
+            scrollTrigger: {
+                id: 'we-connect-1',
+                trigger: '.animation-video-container',
+                start: '50% 80%',
+                end: '+=20%',
+                markers: false,
+            }
+        });
+        gsap.fromTo('.we-connect', {opacity: 1}, {
+            opacity: 0,
+            immediateRender: false,
+            scrollTrigger: {
+                id: 'we-connect-0',
+                trigger: '.animation-video-container',
+                start: '85% 80%',
+                end: '+=20%',
+                markers: false,
+            }
+        });
+        gsap.fromTo('.we-create', {opacity: 0}, {
+            opacity: 1,
+            immediateRender: false,
+            scrollTrigger: {
+                id: 'we-create-1',
+                trigger: '.animation-video-container',
+                start: '85% 80%',
+                end: '+=20%',
+                markers: false,
+            }
+        });
+        gsap.fromTo('.we-create', {opacity: 1}, {
+            opacity: 0,
+            immediateRender: false,
+            scrollTrigger: {
+                id: 'we-create-1',
+                trigger: '.animation-video-container',
+                start: '120% 80%',
+                end: '+=20%',
+                markers: false,
+            }
+        });
     }
 
     function growBox () {
@@ -64,7 +145,8 @@ export default defineNuxtPlugin((nuxtApp) => {
                 id: 'growBox',
                 trigger: '.pillar-box-section',
                 start: '0 60%',
-                end: '+=40%',
+                end: '+=60%',
+                markers: false,
             },
         });
         
@@ -75,6 +157,7 @@ export default defineNuxtPlugin((nuxtApp) => {
                 trigger: '.pillar-box-section',
                 start: '20% 45%',
                 end: '+=10%',
+                markers: false,
             },
         });
     }
