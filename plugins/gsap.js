@@ -1,5 +1,6 @@
 import { gsap } from 'gsap';
-import { ScrollSmoother, ScrollTrigger, CustomEase } from 'gsap/all';
+import { ScrollTrigger, CustomEase } from 'gsap/all';
+import { ScrollSmoother } from 'gsap/ScrollSmoother';
 
 export default defineNuxtPlugin((nuxtApp) => {
     onNuxtReady((app) => {
