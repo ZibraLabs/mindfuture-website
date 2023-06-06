@@ -8,7 +8,9 @@ export default defineNuxtPlugin((nuxtApp) => {
     });
 
     function init () {
-        gsap.registerPlugin(ScrollTrigger, ScrollSmoother, CustomEase);
+        gsap.registerPlugin(ScrollTrigger);
+        gsap.registerPlugin(ScrollSmoother);
+        gsap.registerPlugin(CustomEase);
     
         ScrollTrigger.normalizeScroll(true)
     
