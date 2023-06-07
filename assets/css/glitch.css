@@ -44,19 +44,23 @@
 	animation-iteration-count: infinite;
 }
 
+.content {
+    height: 35vh;
+}
+
 .content__title {
     position: absolute;
-    left: 0;
-    bottom: 0;
-	margin: 35vh 0 0 0;
+    left: 2vw;
+    top: -4vh;
 	position: relative;
 	animation-delay: calc(var(--delay-anim) + var(--time-anim) * 0.2);
 }
 
 .content__text {
     position: absolute;
-    left: 0;
+    right: 0;
     bottom: -5vh;
+    text-align: right;
 	font-size: 1.5em;
 	max-width: 30vw;
 	font-weight: 400;
@@ -65,7 +69,7 @@
 
 .content__link {
     position: absolute;
-    right: 0;
+    left: 0;
     bottom: -4vh;
 	font-weight: 400;
 	animation-delay: calc(var(--delay-anim) + var(--time-anim) * 0.25);
