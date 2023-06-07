@@ -30,9 +30,20 @@ export default defineNuxtPlugin((nuxtApp) => {
 
         parallaxGarage();
         videoMovement();
-        parallaxBuildStuff('.hardware', 20);
-        parallaxBuildStuff('.artificial', -20);
-        parallaxBuildStuff('.software', 30);
+        parallaxMoveX('.hardware', 20);
+        parallaxMoveX('.artificial', -20);
+        parallaxMoveX('.software', 30);
+
+        parallaxMoveY('.m2call-parallax', '-8%');
+        parallaxMoveX('.m2call-parallax', '14%');
+        
+        parallaxMoveY('.easyid-nivo-parallax', '8%');
+        parallaxMoveX('.easyid-nivo-parallax', '-5%');
+
+        parallaxMoveY('.mindvision-parallax', '-8%');
+        parallaxMoveX('.mindvision-parallax', '10%');
+
+        parallaxRotate('.easyid-nivo-parallax', 5);
     }
 
     function parallaxGarage () {
@@ -47,7 +58,7 @@ export default defineNuxtPlugin((nuxtApp) => {
         });
     }
 
-    function parallaxBuildStuff(element, amount) {
+    function parallaxMoveX(element, amount) {
         gsap.to(element, {
             scrollTrigger: {
                 trigger: element,
@@ -56,6 +67,30 @@ export default defineNuxtPlugin((nuxtApp) => {
                 markers: false,
             }, // start the animation when ".box" enters the viewport (once)
             x: amount,
+        })
+    }
+
+    function parallaxMoveY(element, amount) {
+        gsap.to(element, {
+            scrollTrigger: {
+                trigger: element,
+                start: '0 80%',
+                end: '+=50%',
+                markers: false,
+            }, // start the animation when ".box" enters the viewport (once)
+            y: amount,
+        })
+    }
+
+    function parallaxRotate (element, amount) {
+        gsap.to(element, {
+            scrollTrigger: {
+                trigger: element,
+                start: '0 60%',
+                end: '+=80%',
+                markers: false,
+            }, // start the animation when ".box" enters the viewport (once)
+            rotate: amount,
         })
     }
 
