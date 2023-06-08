@@ -34,13 +34,13 @@ export default defineNuxtPlugin((nuxtApp) => {
         parallaxMoveX('.artificial', -20);
         parallaxMoveX('.software', 30);
 
-        parallaxMoveY('.m2call-parallax', '-12%');
+        parallaxMoveY('.m2call-parallax', '-30%');
         // parallaxMoveX('.m2call-parallax', '14%');
         
-        parallaxMoveY('.easyid-nivo-parallax', '12%');
+        parallaxMoveY('.easyid-nivo-parallax', '-30%');
         // parallaxMoveX('.easyid-nivo-parallax', '-5%');
 
-        parallaxMoveY('.mindvision-parallax', '-12%');
+        parallaxMoveY('.mindvision-parallax', '-60%');
         // parallaxMoveX('.mindvision-parallax', '10%');
 
         // parallaxRotate('.easyid-nivo-parallax', 5);
@@ -74,8 +74,8 @@ export default defineNuxtPlugin((nuxtApp) => {
         gsap.to(element, {
             scrollTrigger: {
                 trigger: element,
-                start: '0 80%',
-                end: '+=50%',
+                start: '0 100%',
+                end: '+=100%',
                 markers: false,
             }, // start the animation when ".box" enters the viewport (once)
             y: amount,
