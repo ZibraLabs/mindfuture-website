@@ -35,15 +35,8 @@ export default defineNuxtPlugin((nuxtApp) => {
         parallaxMoveX('.software', 30);
 
         parallaxMoveY('.m2call-parallax', '-30%');
-        // parallaxMoveX('.m2call-parallax', '14%');
-        
         parallaxMoveY('.easyid-nivo-parallax', '-30%');
-        // parallaxMoveX('.easyid-nivo-parallax', '-5%');
-
         parallaxMoveY('.mindvision-parallax', '-60%');
-        // parallaxMoveX('.mindvision-parallax', '10%');
-
-        // parallaxRotate('.easyid-nivo-parallax', 5);
     }
 
     function parallaxGarage () {

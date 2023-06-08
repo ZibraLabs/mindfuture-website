@@ -24,19 +24,19 @@
 
 .glitch__delay__2 {
     --delay-anim: 19s;
-    --time-anim: 13s;
+    --time-anim: 3s;
 }
 .glitch__delay__4 {
     --delay-anim: 14s;
-    --time-anim: 11s;
+    --time-anim: 4s;
 }
 .glitch__delay__8 {
     --delay-anim: 28s;
-    --time-anim: 14s;
+    --time-anim: 5s;
 }
 .glitch__delay__12 {
     --delay-anim: 22s;
-    --time-anim: 12s;
+    --time-anim: 2s;
 }
 
 .content__title,
