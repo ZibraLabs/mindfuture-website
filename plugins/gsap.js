@@ -175,7 +175,7 @@ export default defineNuxtPlugin((nuxtApp) => {
             scrollTrigger: {
                 id: 'growBox',
                 trigger: '.pillar-box-section',
-                start: '0 60%',
+                start: '-30% 60%',
                 end: '+=60%',
                 markers: false,
             },
@@ -186,7 +186,7 @@ export default defineNuxtPlugin((nuxtApp) => {
             scrollTrigger: {
                 id: 'growBoxText',
                 trigger: '.pillar-box-section',
-                start: '20% 45%',
+                start: '-20% 45%',
                 end: '+=10%',
                 markers: false,
             },

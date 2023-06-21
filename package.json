@@ -17,6 +17,8 @@
     "tailwindcss": "^3.3.2"
   },
   "dependencies": {
+    "@egjs/flicking-plugins": "^4.7.0",
+    "@egjs/vue3-flicking": "^4.10.7",
     "gsap": "npm:@gsap/shockingly@^3.11.5"
   }
 }

@@ -75,8 +75,6 @@
 }
 
 
-
-
 /* **************** */
 /*  CUSTOM STYLING  */
 /* **************** */
@@ -97,7 +95,7 @@ h1 {
 }
 
 h2 {
-    @apply text-[20vw] lg:text-[5vw] leading-none;
+    @apply text-[12vw] lg:text-[5vw] leading-none;
 }
 
 h2.no-grow {
@@ -129,9 +127,11 @@ video.fullscreen:-webkit-media-controls {
 }
 
 .pillar-box {
-    clip-path: polygon(
-        10% 0%, 100% 0, 100% 0, 100% 88%, 90% 100%, 0 100%, 0 100%, 0% 12%
-    );
+    @media only screen and (min-width: 1024px) {
+        clip-path: polygon(
+            10% 0%, 100% 0, 100% 0, 100% 88%, 90% 100%, 0 100%, 0 100%, 0% 12%
+        );
+    }
 }
 
 /* ********** */
