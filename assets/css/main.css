@@ -111,7 +111,7 @@ h4 {
 }
 
 p {
-    font-size: 16px;
+    @apply text-xs lg:text-base;
 }
 
 img.dark-overlay {

@@ -26,17 +26,35 @@ export default defineNuxtPlugin((nuxtApp) => {
             markers: true,
         });
 
-        growBox();
+        let mm = gsap.matchMedia();
 
-        parallaxGarage();
-        videoMovement();
-        parallaxMoveX('.hardware', 20);
-        parallaxMoveX('.artificial', -20);
-        parallaxMoveX('.software', 30);
+        mm.add("(min-width: 800px)", () => {
+            growBox();
+    
+            parallaxGarage();
+            videoMovement();
+            parallaxMoveX('.hardware', 20);
+            parallaxMoveX('.artificial', -20);
+            parallaxMoveX('.software', 30);
+    
+            parallaxMoveY('.m2call-parallax', '-30%');
+            parallaxMoveY('.easyid-nivo-parallax', '-30%');
+            parallaxMoveY('.mindvision-parallax', '-60%');
+        });
 
-        parallaxMoveY('.m2call-parallax', '-30%');
-        parallaxMoveY('.easyid-nivo-parallax', '-30%');
-        parallaxMoveY('.mindvision-parallax', '-60%');
+        mm.add("(max-width: 799px)", () => {
+            growBoxMobile();
+    
+            parallaxGarageMobile();
+            // videoMovement();
+            parallaxMoveX('.hardware', 20);
+            parallaxMoveX('.artificial', -20);
+            parallaxMoveX('.software', 30);
+    
+            // parallaxMoveY('.m2call-parallax', '-30%');
+            // parallaxMoveY('.easyid-nivo-parallax', '-30%');
+            // parallaxMoveY('.mindvision-parallax', '-60%');
+        });
     }
 
     function parallaxGarage () {
@@ -48,6 +66,18 @@ export default defineNuxtPlugin((nuxtApp) => {
                 markers: false,
             }, // start the animation when ".box" enters the viewport (once)
             x: -200,
+        });
+    }
+
+    function parallaxGarageMobile () {
+        gsap.to(".garage", {
+            scrollTrigger: {
+                trigger: '.garage-title',
+                start: '0 100%',
+                end: '100%',
+                markers: false,
+            }, // start the animation when ".box" enters the viewport (once)
+            x: -10,
         });
     }
 
@@ -72,18 +102,6 @@ export default defineNuxtPlugin((nuxtApp) => {
                 markers: false,
             }, // start the animation when ".box" enters the viewport (once)
             y: amount,
-        })
-    }
-
-    function parallaxRotate (element, amount) {
-        gsap.to(element, {
-            scrollTrigger: {
-                trigger: element,
-                start: '0 60%',
-                end: '+=80%',
-                markers: false,
-            }, // start the animation when ".box" enters the viewport (once)
-            rotate: amount,
         })
     }
 
@@ -188,6 +206,32 @@ export default defineNuxtPlugin((nuxtApp) => {
                 trigger: '.pillar-box-section',
                 start: '-20% 45%',
                 end: '+=10%',
+                markers: false,
+            },
+        });
+    }
+    
+    function growBoxMobile () {
+        gsap.to('.pillar-box', {
+            scale: '122',
+            duration: 3,
+            ease: CustomEase.create("custom", "M0,0 C0.438,0.198 0.5,0.604 0.616,0.738 0.719,0.857 0.78,1 1,1 "),
+            scrollTrigger: {
+                id: 'growBox',
+                trigger: '.pillar-box-section',
+                start: '-30% 50%',
+                end: '+=60%',
+                markers: false,
+            },
+        });
+        
+        gsap.to('.pillar-text', {
+            opacity: 1,
+            scrollTrigger: {
+                id: 'growBoxText',
+                trigger: '.pillar-box-section',
+                start: '-20% 20%',
+                end: '+=30%',
                 markers: false,
             },
         });
