@@ -1,5 +1,5 @@
 import { gsap } from 'gsap';
-import { ScrollTrigger, CustomEase } from 'gsap/all';
+import { ScrollTrigger, CustomEase, DrawSVGPlugin } from 'gsap/all';
 import { ScrollSmoother } from 'gsap/ScrollSmoother';
 
 export default defineNuxtPlugin((nuxtApp) => {
@@ -11,6 +11,7 @@ export default defineNuxtPlugin((nuxtApp) => {
         gsap.registerPlugin(ScrollTrigger);
         gsap.registerPlugin(ScrollSmoother);
         gsap.registerPlugin(CustomEase);
+        gsap.registerPlugin(DrawSVGPlugin);
     
         ScrollTrigger.normalizeScroll(true)
     
@@ -28,20 +29,26 @@ export default defineNuxtPlugin((nuxtApp) => {
 
         let mm = gsap.matchMedia();
 
+        // DESKTOP
         mm.add("(min-width: 800px)", () => {
             growBox();
+            growingLine();
+            movingLine();
+
+            stickyButton();
     
             parallaxGarage();
             videoMovement();
-            parallaxMoveX('.hardware', 20);
-            parallaxMoveX('.artificial', -20);
-            parallaxMoveX('.software', 30);
+            parallaxMoveX('.hardware', 150);
+            parallaxMoveX('.artificial', -150);
+            parallaxMoveX('.software', 270);
     
             parallaxMoveY('.m2call-parallax', '-30%');
             parallaxMoveY('.easyid-nivo-parallax', '-30%');
             parallaxMoveY('.mindvision-parallax', '-60%');
         });
 
+        // MOBILE
         mm.add("(max-width: 799px)", () => {
             growBoxMobile();
     
@@ -54,6 +61,37 @@ export default defineNuxtPlugin((nuxtApp) => {
             // parallaxMoveY('.m2call-parallax', '-30%');
             // parallaxMoveY('.easyid-nivo-parallax', '-30%');
             // parallaxMoveY('.mindvision-parallax', '-60%');
+        });
+    }
+
+    function movingLine () {
+        gsap.from('.moving-line',{
+            scrollTrigger: {
+                trigger: '.moving-line',
+                start: '-50% 75%',
+                end: 'bottom 50%',
+                markers: false,
+            },
+            ease: "none",
+            drawSVG:"0% 0%"
+        });
+    }
+
+    function stickyButton () {
+        gsap.to('.sticky-button', {
+            duration: 3,
+            scrollTrigger: {
+                id: 'sticky-button',
+                trigger: '.sticky-button-container',
+                pin: '.sticky-button',
+                start: 'top top',
+                end: 99999,
+                markers: false,
+                toggleClass: {
+                    className: 'sticky-button--scrolled',
+                    targets: '.sticky-button'
+                }
+            }
         });
     }
 
@@ -185,16 +223,32 @@ export default defineNuxtPlugin((nuxtApp) => {
         });
     }
 
+    function growingLine () {
+        let parentContainer = document.querySelector('.growing-line').parentNode;
+
+        gsap.to('.growing-line', {
+            height: parentContainer.clientHeight,
+            ease: CustomEase.create("custom", "M0,0 C0.438,0.198 0.5,0.604 0.616,0.738 0.719,0.857 0.78,1 1,1 "),
+            scrollTrigger: {
+                id: 'growingLine',
+                trigger: '.growing-line',
+                start: '0% 70%',
+                end: '+=150%',
+                markers: false,
+            },
+        });
+    }
+
     function growBox () {
         gsap.to('.pillar-box', {
-            scale: '102',
+            scale: '110',
             duration: 3,
             ease: CustomEase.create("custom", "M0,0 C0.438,0.198 0.5,0.604 0.616,0.738 0.719,0.857 0.78,1 1,1 "),
             scrollTrigger: {
                 id: 'growBox',
                 trigger: '.pillar-box-section',
-                start: '-30% 60%',
-                end: '+=60%',
+                start: '20% 60%',
+                end: '+=40%',
                 markers: false,
             },
         });
@@ -204,7 +258,7 @@ export default defineNuxtPlugin((nuxtApp) => {
             scrollTrigger: {
                 id: 'growBoxText',
                 trigger: '.pillar-box-section',
-                start: '-20% 45%',
+                start: '30% 45%',
                 end: '+=10%',
                 markers: false,
             },

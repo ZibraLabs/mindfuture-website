@@ -78,7 +78,7 @@
             :plugins="plugins"
         >
             <div class="relative w-[80vw] h-[50vh] space-y-8">
-                <div class="space-y-8 glitch__delay__2">
+                <div class="space-y-8 glitch__delay__8">
                     <h3 class="text-primary">M2Call</h3>
                     <div class="relative h-[30vh]">
                         <div class="glitch">

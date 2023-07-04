@@ -74,6 +74,56 @@
     font-style: italic;
 }
 
+/* HELLIX FONT */
+@font-face {
+    font-family: "Hellix";
+    src: url("~/assets/fonts/Hellix-Black.otf") format("opentype");
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Hellix";
+    src: url("~/assets/fonts/Hellix-ExtraBold.otf") format("opentype");
+    font-weight: 800;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Hellix";
+    src: url("~/assets/fonts/Hellix-Bold.otf") format("opentype");
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Hellix";
+    src: url("~/assets/fonts/Hellix-SemiBold.otf") format("opentype");
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Hellix";
+    src: url("~/assets/fonts/Hellix-Medium.otf") format("opentype");
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Hellix";
+    src: url("~/assets/fonts/Hellix-Regular.otf") format("opentype");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Hellix";
+    src: url("~/assets/fonts/Hellix-Light.otf") format("opentype");
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Hellix";
+    src: url("~/assets/fonts/Hellix-Thin.otf") format("opentype");
+    font-weight: 100;
+    font-style: normal;
+}
+
 
 /* **************** */
 /*  CUSTOM STYLING  */
@@ -87,7 +137,8 @@ body {
 }
 
 h1, h2, h3, h4 {
-    font-family: Mindfuture, sans-serif;
+    font-family: 'Hellix', sans-serif;
+    font-weight: 700;
 }
 
 h1 {
@@ -114,6 +165,10 @@ p {
     @apply text-xs lg:text-base;
 }
 
+.mindfuture {
+    font-family: 'Hellix', sans-serif;
+}
+
 img.dark-overlay {
     @apply grayscale;
 }
@@ -132,6 +187,12 @@ video.fullscreen:-webkit-media-controls {
             10% 0%, 100% 0, 100% 0, 100% 88%, 90% 100%, 0 100%, 0 100%, 0% 12%
         );
     }
+}
+
+.sticky-button {
+    z-index: 999999;
+    transition: margin-top ease-in-out 300ms;
+    margin-top: 2rem !important;
 }
 
 /* ********** */

@@ -1,13 +1,17 @@
 <template>
     <div class="border-y border-border relative">
-        <div class="mt-[9.2vw] lg:mt-0 lg:flex lg:items-stretch mx-auto border-x lg:max-w-max border-border relative z-10 divide-x divide-border -translate-x-[8%] software">
+        <div class="mt-[9.2vw] lg:mt-0 lg:flex lg:items-stretch mx-auto border-x lg:max-w-max border-border relative z-10 divide-x divide-border software">
             <div>
                 <img class="dark-overlay lg:h-[30vw]" src="@/assets/images/software.jpg" />
             </div>
-            <div class="bg-button-background p-12 px-10 lg:max-w-[30vw]">
-                <strong class="uppercase">We build stuff that matter</strong>
-                <p>Id proident veniam commodo duis aliqua aliquip sit officia in sint duis voluptate labore cupidatat.</p>
-                <h2 class="text-primary">software</h2>
+            <div class="bg-button-background p-12 px-10 lg:max-w-2xl flex flex-col justify-between">
+                <div>
+                    <h2 class="text-primary">software</h2>
+                </div>
+                <div class="max-w-lg mr-20 space-y-8">
+                    <p>adipiscing elit. Nam sagittis turpis posuere mauris dapibus, rutrum malesuada neque volutpat. ndisse sodales cursus eros sed efficitur.adipiscing elit. Nam sagittis turpis posuere mauris dapibus, rutrum </p>
+                    <FormButton button-type="dark">Learn more</FormButton>
+                </div>
             </div>
         </div>
         <div class="w-full lg:w-1/2 absolute top-0 right-0 z-0 border-b border-border">

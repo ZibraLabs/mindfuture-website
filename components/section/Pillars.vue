@@ -1,7 +1,7 @@
 <template>
     <section class="overflow-hidden">
         <div class="bg-secondary w-screen h-[60vh] lg:h-screen flex items-center justify-center pillar-box-section relative">
-            <div class="absolute inset-0 flex items-start justify-center pt-12 lg:hidden">
+            <div class="absolute inset-0 flex items-start lg:items-center justify-center pt-12 lg:pt-0 lg:-mt-[40%]">
                 <h3 class="text-background">and this is how</h3>
             </div>
             <div class="pillar-box bg-body-dark overflow-hidden flex items-center justify-center w-[1vw] h-[0.6vh] lg:w-[1vw] lg:h-[1vh]"></div>
