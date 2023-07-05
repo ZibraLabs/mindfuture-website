@@ -1,6 +1,6 @@
 <template>
     <section class="w-full">
-        <div class="relative w-full h-[70vh]">
+        <div class="relative w-full h-[80vh]">
             <div class="absolute inset-0 pointer-events-none flex items-start justify-center pt-[20vw] pl-[6vw]">
                 <div v-slideIn>
                     <h2 class="slideInRight">why not get in <span class="text-primary">touch</span>?</h2>

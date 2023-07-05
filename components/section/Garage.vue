@@ -1,6 +1,6 @@
 <template>
-    <section class="w-full h-[50vh] lg:h-[50vw] bg-secondary text-body-dark flex items-center justify-end overflow-hidden">
-        <div class="garage">
+    <section class="w-full h-[50vh] lg:h-[60vw] bg-secondary text-body-dark flex items-center justify-end overflow-hidden">
+        <div class="garage -mt-[10vh]">
             <h3 class="text-body-dark">introducing our</h3>
             <h1 class="leading-none -mt-[1vw] garage-title">
                 garages

@@ -17,6 +17,8 @@
             </div>
             <div></div>
             <div></div>
+            <div></div>
+            <div></div>
             <div class="lg:col-span-2 flex items-center justify-end">
                 <div class="easyid-nivo-parallax">
                     <div class="w-[80vw] h-[55vh] mr-[6vw] flex items-center space-x-12">

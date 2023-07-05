@@ -44,8 +44,8 @@ export default defineNuxtPlugin((nuxtApp) => {
             parallaxMoveX('.software', 270);
     
             parallaxMoveY('.m2call-parallax', '-30%');
-            parallaxMoveY('.easyid-nivo-parallax', '-30%');
-            parallaxMoveY('.mindvision-parallax', '-60%');
+            parallaxMoveY('.easyid-nivo-parallax', '-15%');
+            parallaxMoveY('.mindvision-parallax', '-50%');
         });
 
         // MOBILE
@@ -241,7 +241,8 @@ export default defineNuxtPlugin((nuxtApp) => {
 
     function growBox () {
         gsap.to('.pillar-box', {
-            scale: '110',
+            width: '100vw',
+            height: '100vh',
             duration: 3,
             ease: CustomEase.create("custom", "M0,0 C0.438,0.198 0.5,0.604 0.616,0.738 0.719,0.857 0.78,1 1,1 "),
             scrollTrigger: {
