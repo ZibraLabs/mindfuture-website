@@ -233,7 +233,7 @@ export default defineNuxtPlugin((nuxtApp) => {
                 id: 'growingLine',
                 trigger: '.growing-line',
                 start: '0% 70%',
-                end: '+=150%',
+                end: parentContainer.clientHeight + 'px',
                 markers: false,
             },
         });
