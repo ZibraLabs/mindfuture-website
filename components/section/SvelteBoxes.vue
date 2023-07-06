@@ -8,7 +8,7 @@
                     <FormButton class="mt-24 pointer-events-auto">contact us</FormButton>
                 </div>
             </div>
-            <iframe src="https://mf-cube-animation.vercel.app/" class="w-full h-[70vh] border-none"></iframe>
+            <iframe src="https://mf-cube-animation.vercel.app/" class="w-full h-[80vh] border-none"></iframe>
         </div>
     </section>
 </template>
