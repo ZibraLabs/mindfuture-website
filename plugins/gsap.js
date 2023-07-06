@@ -168,6 +168,8 @@ export default defineNuxtPlugin((nuxtApp) => {
     }
 
     function videoMovement () {
+        let videoContainer = document.querySelector('.animation-video-container');
+
         gsap.to('.animation-video', {
             duration: 3,
             scrollTrigger: {
@@ -175,7 +177,7 @@ export default defineNuxtPlugin((nuxtApp) => {
                 trigger: '.animation-video-container',
                 pin: '.animation-video',
                 start: '0 30%',
-                end: 'bottom-=2.5% top+=60%',
+                end: videoContainer.clientHeight + 'px-=6% top+=60%',
                 markers: false,
             }
         });

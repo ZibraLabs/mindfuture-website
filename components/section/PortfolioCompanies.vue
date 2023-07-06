@@ -53,6 +53,10 @@
                     </div>
                 </div>
             </div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
             <div class="lg:col-span-2 flex justify-center mt-[10vh]">
                 <div class="mindvision-parallax relative w-[50vw] h-[40vh]">
                     <div class="content glitch__delay__2">
