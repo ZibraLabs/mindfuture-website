@@ -191,12 +191,20 @@ video.fullscreen:-webkit-media-controls {
 
 .sticky-button {
     z-index: 999999;
-    transition: margin-left ease-in-out 500ms;
-    margin-top: 1.2rem !important;
+    transition: margin-left ease-in-out 200ms;
+    margin-top: 1.85rem !important;
 }
 
 .sticky-button--scrolled {
-    @apply !ml-8;
+    @apply !ml-32;
+}
+
+.text-appear {
+    @apply translate-y-full transition-transform ease-in-out duration-1000;
+}
+
+.text-appear--visible {
+    @apply translate-y-0;
 }
 
 /* ********** */

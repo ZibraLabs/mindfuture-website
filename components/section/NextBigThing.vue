@@ -1,9 +1,9 @@
 <template>
-    <section class="w-full bg-section-background lg:h-[50vw] flex items-center justify-center relative p-4 py-12">
-        <div v-slideIn class="space-y-8 lg:space-y-0 -mt-32">
-            <h3 class="slideInLeft">we are bringing you</h3>
-            <h2 class="slideInRight transition-all duration-100 ease-in-out">the <span class="text-primary">next</span> big thing</h2>
-            <h3 class="slideInLeft hidden lg:inline-block">and this is how</h3>
+    <section class="w-full bg-section-background lg:h-[50vw] flex items-center justify-center relative p-4 py-12 text-appear-container">
+        <div class="space-y-8 lg:space-y-0 -mt-32">
+            <div class="overflow-hidden"><h3 class="text-appear">we are bringing you</h3></div>
+            <div class="overflow-hidden"><h2 class="text-appear">the <span class="text-primary">next</span> big thing</h2></div>
+            <div class="overflow-hidden"><h3 class="text-appear hidden lg:inline-block">and this is how</h3></div>
         </div>
         <div class="absolute -bottom-2 left-1/4 text-primary h-[22vw]">
             <div class="relative">

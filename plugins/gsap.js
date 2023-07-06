@@ -35,6 +35,8 @@ export default defineNuxtPlugin((nuxtApp) => {
             growingLine();
             movingLine();
 
+            textAppear();
+
             stickyButton();
     
             parallaxGarage();
@@ -64,6 +66,18 @@ export default defineNuxtPlugin((nuxtApp) => {
         });
     }
 
+    function textAppear () {
+        ScrollTrigger.batch('.text-appear', {
+            interval: 0.1,
+            id: 'text-appear',
+            trigger: '.text-appear-container',
+            start: 'top 80%',
+            end: 'bottom',
+            markers: false,
+            toggleClass: 'text-appear--visible',
+        });
+    }
+
     function movingLine () {
         gsap.from('.moving-line',{
             scrollTrigger: {
@@ -79,7 +93,6 @@ export default defineNuxtPlugin((nuxtApp) => {
 
     function stickyButton () {
         gsap.to('.sticky-button', {
-            duration: 3,
             scrollTrigger: {
                 id: 'sticky-button-pin',
                 trigger: '.sticky-button-container',
@@ -162,7 +175,7 @@ export default defineNuxtPlugin((nuxtApp) => {
                 trigger: '.animation-video-container',
                 pin: '.animation-video',
                 start: '0 30%',
-                end: 'bottom top+=60%',
+                end: 'bottom-=2.5% top+=60%',
                 markers: false,
             }
         });

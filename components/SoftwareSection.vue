@@ -4,7 +4,7 @@
             <div>
                 <img class="dark-overlay lg:h-[30vw]" src="@/assets/images/software.jpg" />
             </div>
-            <div class="bg-button-background p-12 px-10 lg:max-w-2xl flex flex-col justify-between">
+            <div class="bg-button-background p-12 px-10 lg:max-w-[50vw] flex flex-col justify-between">
                 <div>
                     <h2 class="text-primary">software</h2>
                 </div>

@@ -1,7 +1,7 @@
 <template>
     <div class="border-y border-border relative bg-button-background">
         <div class="mt-[9.2vw] lg:mt-0 lg:flex lg:items-stretch mx-auto border-x lg:max-w-max border-border relative z-10 divide-x divide-border artificial">
-            <div class="bg-section-background p-12 px-10 lg:max-w-2xl flex flex-col justify-between">
+            <div class="bg-section-background p-12 px-10 lg:max-w-[50vw] flex flex-col justify-between">
                 <div>
                     <h2 class="text-primary">artificial</h2>
                 </div>
