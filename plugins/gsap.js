@@ -71,7 +71,7 @@ export default defineNuxtPlugin((nuxtApp) => {
             interval: 0.1,
             id: 'text-appear',
             trigger: '.text-appear-container',
-            start: 'top 80%',
+            start: 'top 90%',
             end: 'bottom',
             markers: false,
             toggleClass: 'text-appear--visible',
