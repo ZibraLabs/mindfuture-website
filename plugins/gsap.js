@@ -81,10 +81,21 @@ export default defineNuxtPlugin((nuxtApp) => {
         gsap.to('.sticky-button', {
             duration: 3,
             scrollTrigger: {
-                id: 'sticky-button',
+                id: 'sticky-button-pin',
                 trigger: '.sticky-button-container',
                 pin: '.sticky-button',
                 start: 'top top',
+                end: 99999,
+                markers: false,
+            }
+        });
+
+        gsap.to('.sticky-button', {
+            duration: 3,
+            scrollTrigger: {
+                id: 'sticky-button-move',
+                trigger: '.sticky-button-container',
+                start: '-140px',
                 end: 99999,
                 markers: false,
                 toggleClass: {
