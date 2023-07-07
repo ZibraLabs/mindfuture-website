@@ -40,7 +40,7 @@
             <div class="w-full lg:w-2/5 min-h-full animation-video-container">
                 <div class="w-full animation-video relative">
                     <video class="we-envision w-full opacity-0 absolute inset-0 mx-auto" src="@/assets/video/we_envision.mov" autoplay loop muted></video>
-                    <video class="we-connect w-full opacity-0 absolute inset-0 mx-auto" src="@/assets/video/we_connect_new.mov" autoplay loop muted></video>
+                    <video class="we-connect w-full opacity-0 absolute inset-0 mx-auto" src="@/assets/video/we_connect_2.mov" autoplay loop muted></video>
                     <video class="we-create w-full opacity-0 absolute inset-0 mx-auto" src="@/assets/video/we_create.mov" autoplay loop muted></video>
                     <div class="h-px w-full bg-body-gray-dark absolute top-[24vw] inset-x-0"></div>
                 </div>
