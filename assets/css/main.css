@@ -187,16 +187,28 @@ video.fullscreen:-webkit-media-controls {
             10% 0%, 100% 0, 100% 0, 100% 88%, 90% 100%, 0 100%, 0 100%, 0% 12%
         );
     }
+    @media only screen and (max-width: 1024px) {
+        clip-path: polygon(
+            5% 0%, 100% 0, 100% 0, 100% 95%, 95% 100%, 0 100%, 0 100%, 0% 5%
+        );
+    }
 }
 
 .sticky-button {
     z-index: 999999;
     transition: margin-left ease-in-out 200ms;
-    margin-top: 1.85rem !important;
+
+    @media only screen and (min-width: 1024px) {
+        margin-top: 1.85rem !important;
+    }
+
+    @media only screen and (max-width: 1024px) {
+        margin-top: 0.9rem !important;
+    }
 }
 
 .sticky-button--scrolled {
-    @apply !ml-32;
+    @apply !ml-16 lg:!ml-32;
 }
 
 .text-appear {

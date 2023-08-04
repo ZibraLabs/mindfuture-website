@@ -55,10 +55,15 @@ export default defineNuxtPlugin((nuxtApp) => {
             growBoxMobile();
     
             parallaxGarageMobile();
+            textAppear();
+            movingLine();
+
             // videoMovement();
             parallaxMoveX('.hardware', 20);
             parallaxMoveX('.artificial', -20);
             parallaxMoveX('.software', 30);
+
+            stickyButtonMobile();
     
             // parallaxMoveY('.m2call-parallax', '-30%');
             // parallaxMoveY('.easyid-nivo-parallax', '-30%');
@@ -119,6 +124,34 @@ export default defineNuxtPlugin((nuxtApp) => {
         });
     }
 
+    function stickyButtonMobile () {
+        gsap.to('.sticky-button', {
+            scrollTrigger: {
+                id: 'sticky-button-pin',
+                trigger: '.sticky-button-container',
+                pin: '.sticky-button',
+                start: 'top top',
+                end: 99999,
+                markers: false,
+            }
+        });
+
+        gsap.to('.sticky-button', {
+            duration: 3,
+            scrollTrigger: {
+                id: 'sticky-button-move',
+                trigger: '.sticky-button-container',
+                start: '-20px',
+                end: 99999,
+                markers: false,
+                toggleClass: {
+                    className: 'sticky-button--scrolled',
+                    targets: '.sticky-button'
+                }
+            }
+        });
+    }
+
     function parallaxGarage () {
         gsap.to(".garage", {
             scrollTrigger: {
@@ -126,7 +159,7 @@ export default defineNuxtPlugin((nuxtApp) => {
                 start: '0 100%',
                 end: '100%',
                 markers: false,
-            }, // start the animation when ".box" enters the viewport (once)
+            },
             x: -200,
         });
     }
@@ -134,12 +167,12 @@ export default defineNuxtPlugin((nuxtApp) => {
     function parallaxGarageMobile () {
         gsap.to(".garage", {
             scrollTrigger: {
-                trigger: '.garage-title',
+                trigger: '.garage-container',
                 start: '0 100%',
                 end: '100%',
                 markers: false,
-            }, // start the animation when ".box" enters the viewport (once)
-            x: -10,
+            },
+            x: -100,
         });
     }
 
@@ -150,7 +183,7 @@ export default defineNuxtPlugin((nuxtApp) => {
                 start: '0 100%',
                 end: '100%',
                 markers: false,
-            }, // start the animation when ".box" enters the viewport (once)
+            },
             x: amount,
         })
     }
@@ -162,7 +195,7 @@ export default defineNuxtPlugin((nuxtApp) => {
                 start: '0 100%',
                 end: '+=100%',
                 markers: false,
-            }, // start the animation when ".box" enters the viewport (once)
+            },
             y: amount,
         })
     }
