@@ -77,6 +77,48 @@
                     </div>
                 </div>
             </div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div class="lg:col-span-2 flex items-center justify-end">
+                <div class="easyid-nivo-parallax">
+                    <div class="w-[80vw] h-[55vh] mr-[6vw] flex items-center space-x-12">
+                        <div class="flex-1 relative">
+                            <div class="content glitch__delay__12">
+                                <div class="glitch">
+                                    <div class="glitch__img easyid-image"></div>
+                                    <div class="glitch__img easyid-image"></div>
+                                    <div class="glitch__img easyid-image"></div>
+                                    <div class="glitch__img easyid-image"></div>
+                                    <div class="glitch__img easyid-image"></div>
+                                </div>
+                                <h2 class="content__title text-primary">Life with aritificials</h2>
+                                <p class="content__text">Consectetur irure et aute elit eu consequat voluptate exercitation proident Lorem magna fugiat proident consequat.</p>
+                                <FormButton class="content__link">Learn more</FormButton>
+                            </div>
+                        </div>
+                        <div class="flex-1 relative">
+                            <div class="content glitch__delay__4">
+                                <div class="glitch">
+                                    <div class="glitch__img nivo-image"></div>
+                                    <div class="glitch__img nivo-image"></div>
+                                    <div class="glitch__img nivo-image"></div>
+                                    <div class="glitch__img nivo-image"></div>
+                                    <div class="glitch__img nivo-image"></div>
+                                </div>
+                                <h2 class="content__title text-primary">Taastrup kommune</h2>
+                                <p class="content__text">Consectetur irure et aute elit eu consequat voluptate exercitation proident Lorem magna fugiat proident consequat.</p>
+                                <FormButton class="content__link">Learn more</FormButton>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     <section class="glitches block lg:hidden">
