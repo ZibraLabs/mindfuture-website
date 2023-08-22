@@ -1,10 +1,11 @@
-import { gsap } from 'gsap';
+import { gsap, Power2 } from 'gsap';
 import { ScrollTrigger, CustomEase, DrawSVGPlugin } from 'gsap/all';
 import { ScrollSmoother } from 'gsap/ScrollSmoother';
 
 export default defineNuxtPlugin((nuxtApp) => {
     onNuxtReady((app) => {
-        init();
+        // init();
+        moveLogo();
     });
 
     function init () {
@@ -31,6 +32,8 @@ export default defineNuxtPlugin((nuxtApp) => {
 
         // DESKTOP
         mm.add("(min-width: 800px)", () => {
+            // moveLogo();
+            colorLogo();
             growBox();
             growingLine();
             movingLine();
@@ -41,9 +44,9 @@ export default defineNuxtPlugin((nuxtApp) => {
     
             parallaxGarage();
             videoMovement();
-            parallaxMoveX('.hardware', 150);
-            parallaxMoveX('.artificial', -150);
-            parallaxMoveX('.software', 270);
+            parallaxMoveX('.hardware', 50);
+            parallaxMoveX('.artificial', -50);
+            parallaxMoveX('.software', 80);
     
             parallaxMoveY('.m2call-parallax', '-30%');
             parallaxMoveY('.easyid-nivo-parallax', '-15%');
@@ -69,6 +72,55 @@ export default defineNuxtPlugin((nuxtApp) => {
             // parallaxMoveY('.easyid-nivo-parallax', '-30%');
             // parallaxMoveY('.mindvision-parallax', '-60%');
         });
+    }
+
+    function colorLogo () {
+        gsap.to('#main-logo', {
+            duration: 3,
+            scrollTrigger: {
+                id: 'color-logo',
+                trigger: '.garage-container',
+                start: '-48px top',
+                end: 'bottom-=48px top',
+                markers: false,
+                toggleClass: {
+                    className: 'text-background',
+                    targets: '#main-logo'
+                }
+            }
+        });
+    }
+
+    function moveLogo () {
+        let loadingBar = document.querySelector('#loading-bar-fill');
+
+        const timeline = gsap.timeline();
+
+        timeline.to("#loading-bar-fill", {
+            duration: 1.5,
+            width: "100%",
+            onUpdate: () => {
+                document.querySelector('#loading-amount').innerHTML = parseInt(loadingBar.style.width) + '%';
+            },
+        }, 0).to("#loading-bar-content", {
+            duration: 0.8,
+            opacity: 0,
+        }, "+=0.2").to("#logo-load", {
+            duration: 1.5,
+            x: 64,
+            y: 48,
+            width: 82.5,
+            height: 40,
+            transformOrigin: "top left",
+            ease: Power2.easeInOut,
+            onComplete: () => {
+                init();
+            },
+        }, "+=0").to('#loading-full', {
+            duration: 1.2,
+            height: 0,
+            ease: Power2.easeInOut,
+        }, "-=1");
     }
 
     function textAppear () {
