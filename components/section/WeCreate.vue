@@ -1,35 +1,50 @@
 <template>
-    <section class="w-screen lg:overflow-auto lg:scroll-smooth">
-        <div class="flex items-stretch flex-col lg:flex-row w-full h-full bg-background border-t border-border">
-            <div class="w-full lg:w-3/5 bg-body-dark divide-y divide-body-gray-dark border-r border-body-gray-dark">
+    <section class="w-screen desktop-sm:overflow-auto desktop-sm:scroll-smooth">
+        <div class="flex items-stretch flex-col desktop-sm:flex-row w-full h-full bg-background border-t border-border">
+            <div class="w-full desktop-sm:w-3/5 bg-body-dark divide-y divide-body-gray-dark border-r border-body-gray-dark">
                 <ScrollText>pillars</ScrollText>
-                    <div class="w-full lg:h-[40vw] bg-body-dark text-3xl flex items-end lg:px-[4vh] pb-[8vh]">
-                        <div class="space-y-8 lg:max-w-[40vw]">
-                            <h3 class="hidden lg:block">no. 1</h3>
-                            <h2 class="lg:text-primary capitalize lg:normal-case px-[6vw] lg:px-0"><span class="text-primary lg:hidden">1.</span> envision</h2>
-                            <video class="w-full lg:hidden" src="@/assets/video/we_envision.mov" autoplay loop muted></video>
-                            <p class="p-[6vw] lg:p-0 bg-button-background lg:bg-transparent">Id nostrud commodo ad eu commodo voluptate ex qui anim sunt Lorem sunt consequat. Reprehenderit nulla adipisicing sunt mollit nulla ipsum proident aliquip exercitation proident. Elit ea id anim est ea laborum quis amet velit consequat incididunt. Duis quis excepteur ut dolore nisi ipsum duis do officia. Qui cillum do culpa ex labore qui veniam fugiat veniam mollit nostrud. Ipsum ullamco eiusmod est nostrud aute commodo laborum. Consectetur culpa est non do labore Lorem ipsum elit dolor deserunt anim irure deserunt.</p>
+                    <div class="w-full desktop-sm:h-[40vw] bg-body-dark text-3xl flex items-end desktop-sm:px-[4vh] pb-[8vh]">
+                        <div class="space-y-8 desktop-sm:max-w-[40vw]">
+                            <h3 class="hidden desktop-sm:block">no. 1</h3>
+                            <h2 class="desktop-sm:text-primary capitalize desktop-sm:normal-case px-[6vw] desktop-sm:px-0"><span class="text-primary desktop-sm:hidden">1.</span> envision</h2>
+                            <video class="w-full desktop-sm:hidden" src="@/assets/video/we_envision.mov" autoplay loop muted></video>
+                            <p class="p-[6vw] desktop-sm:p-0 bg-button-background desktop-sm:bg-transparent">
+                                Envisioning for us means seeing the world in a new way. It means to innovate, notice patterns & trends and set up clear directions for the future. We encourage experimentation, open discussion and the freedom to think outside the box. We want our team members to fearlessly explore new technologies and ideas.
+                            </p>
+                            <p class="p-[6vw] desktop-sm:p-0 bg-button-background desktop-sm:bg-transparent">
+                                Understanding our customers and partners needs, problems and aspirations is big part of that. This customer-centric approach allow us to identify gaps in the market and design products and solutions that truly add value to our society.
+                            </p>
                         </div>
                     </div>
-                    <div class="w-full lg:h-[40vw] bg-body-dark text-3xl flex items-end lg:px-[4vh] pb-[8vh]">
-                        <div class="space-y-8 lg:max-w-[40vw]">
-                            <h3 class="hidden lg:block">no. 1</h3>
-                            <h2 class="lg:text-primary capitalize lg:normal-case px-[6vw] lg:px-0"><span class="text-primary lg:hidden">2.</span> connect</h2>
-                            <video class="w-full lg:hidden" src="@/assets/video/we_connect_2.mov" autoplay loop muted></video>
-                            <p class="p-[6vw] lg:p-0 bg-button-background lg:bg-transparent">Id nostrud commodo ad eu commodo voluptate ex qui anim sunt Lorem sunt consequat. Reprehenderit nulla adipisicing sunt mollit nulla ipsum proident aliquip exercitation proident. Elit ea id anim est ea laborum quis amet velit consequat incididunt. Duis quis excepteur ut dolore nisi ipsum duis do officia. Qui cillum do culpa ex labore qui veniam fugiat veniam mollit nostrud. Ipsum ullamco eiusmod est nostrud aute commodo laborum. Consectetur culpa est non do labore Lorem ipsum elit dolor deserunt anim irure deserunt.</p>
+                    <div class="w-full desktop-sm:h-[40vw] bg-body-dark text-3xl flex items-end desktop-sm:px-[4vh] pb-[8vh]">
+                        <div class="space-y-8 desktop-sm:max-w-[40vw]">
+                            <h3 class="hidden desktop-sm:block">no. 1</h3>
+                            <h2 class="desktop-sm:text-primary capitalize desktop-sm:normal-case px-[6vw] desktop-sm:px-0"><span class="text-primary desktop-sm:hidden">2.</span> connect</h2>
+                            <video class="w-full desktop-sm:hidden" src="@/assets/video/we_connect_2.mov" autoplay loop muted></video>
+                            <p class="p-[6vw] desktop-sm:p-0 bg-button-background desktop-sm:bg-transparent">
+                                We strive to achieve the ultimate synergies as we seamlessly connect diverse customer segments with cutting-edge technologies. Guided by our team of skilled experts driven by unwavering determination, we use the power of this fusion to propel our visions forward.
+                            </p>
+                            <p class="p-[6vw] desktop-sm:p-0 bg-button-background desktop-sm:bg-transparent">
+                                To connect is to take advantage of all of our strengths, and to rely on one another. We expedite rapid progress by orchestrating dynamic teams comprising seasoned experts, visionary inventors, and strategic partners.
+                            </p>
                         </div>
                     </div>
-                    <div class="w-full lg:h-[40vw] bg-body-dark text-3xl flex items-end lg:px-[4vh] pb-[8vh]">
-                        <div class="space-y-8 lg:max-w-[40vw]">
-                            <h3 class="hidden lg:block">no. 1</h3>
-                            <h2 class="lg:text-primary capitalize lg:normal-case px-[6vw] lg:px-0"><span class="text-primary lg:hidden">3.</span> create</h2>
-                            <video class="w-full lg:hidden" src="@/assets/video/we_create.mov" autoplay loop muted></video>
-                            <p class="p-[6vw] lg:p-0 bg-button-background lg:bg-transparent">Id nostrud commodo ad eu commodo voluptate ex qui anim sunt Lorem sunt consequat. Reprehenderit nulla adipisicing sunt mollit nulla ipsum proident aliquip exercitation proident. Elit ea id anim est ea laborum quis amet velit consequat incididunt. Duis quis excepteur ut dolore nisi ipsum duis do officia. Qui cillum do culpa ex labore qui veniam fugiat veniam mollit nostrud. Ipsum ullamco eiusmod est nostrud aute commodo laborum. Consectetur culpa est non do labore Lorem ipsum elit dolor deserunt anim irure deserunt.</p>
+                    <div class="w-full desktop-sm:h-[40vw] bg-body-dark text-3xl flex items-end desktop-sm:px-[4vh] pb-[8vh]">
+                        <div class="space-y-8 desktop-sm:max-w-[40vw]">
+                            <h3 class="hidden desktop-sm:block">no. 1</h3>
+                            <h2 class="desktop-sm:text-primary capitalize desktop-sm:normal-case px-[6vw] desktop-sm:px-0"><span class="text-primary desktop-sm:hidden">3.</span> create</h2>
+                            <video class="w-full desktop-sm:hidden" src="@/assets/video/we_create.mov" autoplay loop muted></video>
+                            <p class="p-[6vw] desktop-sm:p-0 bg-button-background desktop-sm:bg-transparent">
+                                The final pillar is all about delivering a tangible solution that benefits people. We specialise in crafting groundbreaking technology products from start to finish, with our skillset spanning across both hardware and software.
+                            </p>
+                            <p class="p-[6vw] desktop-sm:p-0 bg-button-background desktop-sm:bg-transparent">
+                                To create is also to forge robust collaborations for manufacturing, ensuring an elevated standard of quality and excellence. Our dedication perseveres until the final product gains substantial traction in the market. But more importantly, until it helps the user.
+                            </p>
                         </div>
                     </div>
             </div>
-            <div class="w-1 bg-secondary max-h-full h-0 growing-line hidden lg:block"></div>
-            <div class="w-full lg:w-2/5 min-h-full animation-video-container hidden lg:block">
+            <div class="w-1 bg-secondary max-h-full h-0 growing-line hidden desktop-sm:block"></div>
+            <div class="w-full desktop-sm:w-2/5 min-h-full animation-video-container hidden desktop-sm:block">
                 <div class="w-full animation-video relative">
                     <video class="we-envision w-full opacity-0 absolute inset-0 mx-auto" src="@/assets/video/we_envision.mov" autoplay loop muted></video>
                     <video class="we-connect w-full opacity-0 absolute inset-0 mx-auto" src="@/assets/video/we_connect_2.mov" autoplay loop muted></video>

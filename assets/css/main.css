@@ -131,9 +131,8 @@
 
 body {
     font-family: 'Satoshi', sans-serif;
-    font-size: 16px;
 
-    @apply text-body-light bg-background scroll-smooth;
+    @apply text-body-light text-[1.3vh] bg-background scroll-smooth;
 }
 
 h1, h2, h3, h4 {
@@ -142,11 +141,11 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-    @apply text-[28vw] lg:text-[16vw];
+    @apply text-[28vw] desktop-sm:text-[16vw];
 }
 
 h2 {
-    @apply text-[12vw] lg:text-[5vw] leading-none;
+    @apply text-[12vw] desktop-sm:text-[5vw] leading-none;
 }
 
 h2.no-grow {
@@ -154,15 +153,15 @@ h2.no-grow {
 }
 
 h3 {
-    @apply text-body-gray-light text-[6vw] lg:text-[1.5vw];
+    @apply text-body-gray-light text-[6vw] desktop-sm:text-[1.5vw];
 }
 
 h4 {
-    @apply text-body-gray-light lg:text-[1vw];
+    @apply text-body-gray-light desktop-sm:text-[1vw];
 }
 
 p {
-    @apply text-xs lg:text-base;
+    @apply text-xs desktop-sm:text-[1.3vh] desktop-sm:leading-[130%];
 }
 
 .mindfuture {
@@ -208,7 +207,7 @@ video.fullscreen:-webkit-media-controls {
 }
 
 .sticky-button--scrolled {
-    @apply !ml-16 lg:!ml-32;
+    @apply !ml-16 desktop-sm:!ml-32;
 }
 
 .text-appear {

@@ -44,9 +44,9 @@ export default defineNuxtPlugin((nuxtApp) => {
     
             parallaxGarage();
             videoMovement();
-            parallaxMoveX('.hardware', 50);
-            parallaxMoveX('.artificial', -50);
-            parallaxMoveX('.software', 80);
+            parallaxMoveX('.hardware', 60);
+            parallaxMoveX('.artificial', -60);
+            parallaxMoveX('.software', 100);
     
             parallaxMoveY('.m2call-parallax', '-30%');
             parallaxMoveY('.easyid-nivo-parallax', '-15%');
