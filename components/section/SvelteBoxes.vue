@@ -1,10 +1,10 @@
 <template>
-    <section class="w-full">
+    <section class="w-full border-b border-border">
         <div class="relative w-full h-screen">
             <div class="absolute inset-0 pointer-events-none flex items-start justify-center pt-[20vw] pl-[6vw]">
                 <div v-slideIn>
                     <h2 class="slideInRight">why not get in <span class="text-primary">touch</span>?</h2>
-                    <h4 class="slideInLeft">and have fun with the gravity cubes</h4>
+                    <h3 class="slideInLeft">and have fun with the gravity cubes</h3>
                     <FormButton class="mt-24 pointer-events-auto">contact us</FormButton>
                 </div>
             </div>

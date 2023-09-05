@@ -1,7 +1,7 @@
 <template>
     <section class="glitches hidden desktop-sm:block">
-        <div class="grid gap-8 desktop-sm:grid-cols-2">
-            <div class="m2call-parallax relative w-full desktop-sm:w-[50vw] desktop-sm:h-[40vh] ml-[6vw]">
+        <div class="grid gap-8 gap-y-80 grid-cols-5 grid-rows-4 px-8">
+            <div class="m2call-parallax relative w-full h-[40vh] col-span-3 row-span-1">
                 <div class="content glitch__delay__8">
                     <div class="glitch">
                         <div class="glitch__img m2call-image"></div>
@@ -15,15 +15,26 @@
                     <!-- <FormButton class="content__link">Learn more</FormButton> -->
                 </div>
             </div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div class="desktop-sm:col-span-2 flex items-center justify-end">
+
+            <div class="col-span-4 w-full row-span-1 col-end-6">
                 <div class="easyid-nivo-parallax">
-                    <div class="w-[80vw] h-[55vh] mr-[6vw] flex items-center space-x-12">
+                    <div class="flex items-center space-x-12">
                         <div class="flex-1 relative">
                             <div class="content glitch__delay__12">
+                                <div class="glitch">
+                                    <div class="glitch__img life-with-artificials-image"></div>
+                                    <div class="glitch__img life-with-artificials-image"></div>
+                                    <div class="glitch__img life-with-artificials-image"></div>
+                                    <div class="glitch__img life-with-artificials-image"></div>
+                                    <div class="glitch__img life-with-artificials-image"></div>
+                                </div>
+                                <h2 class="content__title text-primary">Life with aritificials</h2>
+                                <p class="content__text">Through debate, art, and provoking perspectives we shape the dialogue on integrating virtual and physical artificials.</p>
+                                <!-- <FormButton class="content__link">Learn more</FormButton> -->
+                            </div>
+                        </div>
+                        <div class="flex-1 relative">
+                            <div class="content glitch__delay__4">
                                 <div class="glitch">
                                     <div class="glitch__img easyid-image"></div>
                                     <div class="glitch__img easyid-image"></div>
@@ -36,33 +47,12 @@
                                 <!-- <FormButton class="content__link">Learn more</FormButton> -->
                             </div>
                         </div>
-                        <div class="flex-1 relative">
-                            <div class="content glitch__delay__4">
-                                <div class="glitch">
-                                    <div class="glitch__img nivo-image"></div>
-                                    <div class="glitch__img nivo-image"></div>
-                                    <div class="glitch__img nivo-image"></div>
-                                    <div class="glitch__img nivo-image"></div>
-                                    <div class="glitch__img nivo-image"></div>
-                                </div>
-                                <h2 class="content__title text-primary">Nivo</h2>
-                                <p class="content__text">Bluetooth-connected sensors that gather real-time training data to optimize training, performance, and horse welfare.</p>
-                                <!-- <FormButton class="content__link">Learn more</FormButton> -->
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div class="desktop-sm:col-span-2 flex justify-center mt-[10vh]">
-                <div class="mindvision-parallax relative w-[50vw] h-[40vh]">
+
+            <div class="col-span-3 w-full row-span-1 col-start-2">
+                <div class="mindvision-parallax relative">
                     <div class="content glitch__delay__2">
                         <div class="glitch">
                             <div class="glitch__img mindvision-image"></div>
@@ -77,39 +67,32 @@
                     </div>
                 </div>
             </div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div class="desktop-sm:col-span-2 flex items-center justify-end">
+
+            <div class="col-span-4 w-full row-span-1">
                 <div class="easyid-nivo-parallax">
-                    <div class="w-[80vw] h-[55vh] mr-[6vw] flex items-center space-x-12">
+                    <div class="flex items-center space-x-12">
                         <div class="flex-1 relative">
                             <div class="content glitch__delay__12">
                                 <div class="glitch">
-                                    <div class="glitch__img easyid-image"></div>
-                                    <div class="glitch__img easyid-image"></div>
-                                    <div class="glitch__img easyid-image"></div>
-                                    <div class="glitch__img easyid-image"></div>
-                                    <div class="glitch__img easyid-image"></div>
+                                    <div class="glitch__img nivo-image"></div>
+                                    <div class="glitch__img nivo-image"></div>
+                                    <div class="glitch__img nivo-image"></div>
+                                    <div class="glitch__img nivo-image"></div>
+                                    <div class="glitch__img nivo-image"></div>
                                 </div>
-                                <h2 class="content__title text-primary">Life with aritificials</h2>
-                                <p class="content__text">Through debate, art, and provoking perspectives we shape the dialogue on integrating virtual and physical artificials.</p>
+                                <h2 class="content__title text-primary">Nivo</h2>
+                                <p class="content__text">Bluetooth-connected sensors that gather real-time training data to optimize training, performance, and horse welfare.</p>
                                 <!-- <FormButton class="content__link">Learn more</FormButton> -->
                             </div>
                         </div>
                         <div class="flex-1 relative">
                             <div class="content glitch__delay__4">
                                 <div class="glitch">
-                                    <div class="glitch__img nivo-image"></div>
-                                    <div class="glitch__img nivo-image"></div>
-                                    <div class="glitch__img nivo-image"></div>
-                                    <div class="glitch__img nivo-image"></div>
-                                    <div class="glitch__img nivo-image"></div>
+                                    <div class="glitch__img taastrup-image"></div>
+                                    <div class="glitch__img taastrup-image"></div>
+                                    <div class="glitch__img taastrup-image"></div>
+                                    <div class="glitch__img taastrup-image"></div>
+                                    <div class="glitch__img taastrup-image"></div>
                                 </div>
                                 <h2 class="content__title text-primary">Taastrup kommune</h2>
                                 <p class="content__text">With municipalities, we integrate IoT solutions in society, with expertise in selection, development, and installation.</p>
@@ -187,15 +170,21 @@
 
 <style scoped>
     .m2call-image {
-        background-image: url(~/assets/images/m2call.png);
+        background-image: url(~/assets/images/portfolio/m2call.jpg);
     }
     .nivo-image {
-        background-image: url(~/assets/images/nivo.png);
+        background-image: url(~/assets/images/portfolio/nivo.jpg);
     }
     .easyid-image {
-        background-image: url(~/assets/images/easyid.png);
+        background-image: url(~/assets/images/portfolio/easyid.jpg);
     }
     .mindvision-image {
-        background-image: url(~/assets/images/mindvision.png);
+        background-image: url(~/assets/images/portfolio/mindvision.jpg);
+    }
+    .life-with-artificials-image {
+        background-image: url(~/assets/images/portfolio/lwa.jpg);
+    }
+    .taastrup-image {
+        background-image: url(~/assets/images/portfolio/taastrup.jpg);
     }
 </style>

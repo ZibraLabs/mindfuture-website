@@ -8,4 +8,5 @@
     <SectionWeBuildStuff />
     <SectionPortfolio />
     <SectionSvelteBoxes />
+    <SectionFooter />
 </template>

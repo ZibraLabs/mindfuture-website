@@ -8,12 +8,14 @@
                             <h3 class="hidden desktop-sm:block">no. 1</h3>
                             <h2 class="desktop-sm:text-primary capitalize desktop-sm:normal-case px-[6vw] desktop-sm:px-0"><span class="text-primary desktop-sm:hidden">1.</span> envision</h2>
                             <video class="w-full desktop-sm:hidden" src="@/assets/video/we_envision.mov" autoplay loop muted></video>
-                            <p class="p-[6vw] desktop-sm:p-0 bg-button-background desktop-sm:bg-transparent">
-                                Envisioning for us means seeing the world in a new way. It means to innovate, notice patterns & trends and set up clear directions for the future. We encourage experimentation, open discussion and the freedom to think outside the box. We want our team members to fearlessly explore new technologies and ideas.
-                            </p>
-                            <p class="p-[6vw] desktop-sm:p-0 bg-button-background desktop-sm:bg-transparent">
-                                Understanding our customers and partners needs, problems and aspirations is big part of that. This customer-centric approach allow us to identify gaps in the market and design products and solutions that truly add value to our society.
-                            </p>
+                            <div class="p-[6vw] desktop-sm:p-0 bg-button-background desktop-sm:bg-transparent space-y-[2vw]">
+                                <p>
+                                    Envisioning for us means seeing the world in a new way. It means to innovate, notice patterns & trends and set up clear directions for the future. We encourage experimentation, open discussion and the freedom to think outside the box. We want our team members to fearlessly explore new technologies and ideas.
+                                </p>
+                                <p>
+                                    Understanding our customers and partners needs, problems and aspirations is big part of that. This customer-centric approach allow us to identify gaps in the market and design products and solutions that truly add value to our society.
+                                </p>
+                            </div>
                         </div>
                     </div>
                     <div class="w-full desktop-sm:h-[40vw] bg-body-dark text-3xl flex items-end desktop-sm:px-[4vh] pb-[8vh]">
@@ -21,12 +23,14 @@
                             <h3 class="hidden desktop-sm:block">no. 1</h3>
                             <h2 class="desktop-sm:text-primary capitalize desktop-sm:normal-case px-[6vw] desktop-sm:px-0"><span class="text-primary desktop-sm:hidden">2.</span> connect</h2>
                             <video class="w-full desktop-sm:hidden" src="@/assets/video/we_connect_2.mov" autoplay loop muted></video>
-                            <p class="p-[6vw] desktop-sm:p-0 bg-button-background desktop-sm:bg-transparent">
-                                We strive to achieve the ultimate synergies as we seamlessly connect diverse customer segments with cutting-edge technologies. Guided by our team of skilled experts driven by unwavering determination, we use the power of this fusion to propel our visions forward.
-                            </p>
-                            <p class="p-[6vw] desktop-sm:p-0 bg-button-background desktop-sm:bg-transparent">
-                                To connect is to take advantage of all of our strengths, and to rely on one another. We expedite rapid progress by orchestrating dynamic teams comprising seasoned experts, visionary inventors, and strategic partners.
-                            </p>
+                            <div class="p-[6vw] desktop-sm:p-0 bg-button-background desktop-sm:bg-transparent space-y-[2vw]">
+                                <p>
+                                    We strive to achieve the ultimate synergies as we seamlessly connect diverse customer segments with cutting-edge technologies. Guided by our team of skilled experts driven by unwavering determination, we use the power of this fusion to propel our visions forward.
+                                </p>
+                                <p>
+                                    To connect is to take advantage of all of our strengths, and to rely on one another. We expedite rapid progress by orchestrating dynamic teams comprising seasoned experts, visionary inventors, and strategic partners.
+                                </p>
+                            </div>
                         </div>
                     </div>
                     <div class="w-full desktop-sm:h-[40vw] bg-body-dark text-3xl flex items-end desktop-sm:px-[4vh] pb-[8vh]">
@@ -34,12 +38,14 @@
                             <h3 class="hidden desktop-sm:block">no. 1</h3>
                             <h2 class="desktop-sm:text-primary capitalize desktop-sm:normal-case px-[6vw] desktop-sm:px-0"><span class="text-primary desktop-sm:hidden">3.</span> create</h2>
                             <video class="w-full desktop-sm:hidden" src="@/assets/video/we_create.mov" autoplay loop muted></video>
-                            <p class="p-[6vw] desktop-sm:p-0 bg-button-background desktop-sm:bg-transparent">
-                                The final pillar is all about delivering a tangible solution that benefits people. We specialise in crafting groundbreaking technology products from start to finish, with our skillset spanning across both hardware and software.
-                            </p>
-                            <p class="p-[6vw] desktop-sm:p-0 bg-button-background desktop-sm:bg-transparent">
-                                To create is also to forge robust collaborations for manufacturing, ensuring an elevated standard of quality and excellence. Our dedication perseveres until the final product gains substantial traction in the market. But more importantly, until it helps the user.
-                            </p>
+                            <div class="p-[6vw] desktop-sm:p-0 bg-button-background desktop-sm:bg-transparent space-y-[2vw]">
+                                <p>
+                                    The final pillar is all about delivering a tangible solution that benefits people. We specialise in crafting groundbreaking technology products from start to finish, with our skillset spanning across both hardware and software.
+                                </p>
+                                <p>
+                                    To create is also to forge robust collaborations for manufacturing, ensuring an elevated standard of quality and excellence. Our dedication perseveres until the final product gains substantial traction in the market. But more importantly, until it helps the user.
+                                </p>
+                            </div>
                         </div>
                     </div>
             </div>

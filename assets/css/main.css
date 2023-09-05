@@ -153,15 +153,20 @@ h2.no-grow {
 }
 
 h3 {
-    @apply text-body-gray-light text-[6vw] desktop-sm:text-[1.5vw];
+    @apply text-body-gray-light text-[46px] tablet:text-[50px] desktop-sm:text-[64px] desktop-md:text-[74px] desktop-lg:text-[80px] wide:text-[4wv] leading-snug;
 }
 
 h4 {
-    @apply text-body-gray-light desktop-sm:text-[1vw];
+    @apply text-body-gray-light text-[22px] desktop-lg:text-[30px] wide:text-[1.5wv] leading-snug;
 }
 
-p {
-    @apply text-xs desktop-sm:text-[1.3vh] desktop-sm:leading-[130%];
+
+h5 {
+    @apply text-secondary font-bold;
+}
+
+body, p {
+    @apply text-base wide:text-[0.8vw] wide:leading-[1.2vw];
 }
 
 .mindfuture {
