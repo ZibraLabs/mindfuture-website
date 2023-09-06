@@ -50,7 +50,8 @@ export default defineNuxtPlugin((nuxtApp) => {
     
             parallaxMoveY('.m2call-parallax', '-30%');
             parallaxMoveY('.easyid-nivo-parallax', '-15%');
-            parallaxMoveY('.mindvision-parallax', '-50%');
+            parallaxMoveY('.mindvision-parallax', '-20%');
+            parallaxMoveY('.nivo-taastrup-parallax', '-30%');
         });
 
         // MOBILE
