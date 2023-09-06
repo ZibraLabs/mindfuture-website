@@ -5,7 +5,7 @@
                 <div v-slideIn>
                     <h2 class="slideInRight">why not get in <span class="text-primary">touch</span>?</h2>
                     <h3 class="slideInLeft">and have fun with the gravity cubes</h3>
-                    <FormButton class="mt-24 pointer-events-auto">contact us</FormButton>
+                    <FormButton class="mt-24 pointer-events-auto" href="mailto:info@mindfuture.com">contact us</FormButton>
                 </div>
             </div>
             <iframe src="https://mindfuture-com-cube-animation.vercel.app/" class="w-full h-screen border-none"></iframe>

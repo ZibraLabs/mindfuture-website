@@ -1,9 +1,9 @@
 <template>
     <section>
         <footer class="mt-48 text-body-text">
-            <div class="border-y border-border grid grid-cols-5 h-[582px]">
-                <div class="col-span-4 flex items-center">
-                    <div class="grid grid-cols-4 w-full">
+            <div class="border-y border-border grid grid-cols-1 desktop-sm:grid-cols-5 desktop-sm:h-[582px]">
+                <div class="desktop-sm:col-span-4 flex items-center">
+                    <div class="grid grid-cols-1 desktop-sm:grid-cols-4 w-full">
                         <div class="p-12 space-y-10">
                             <h5>Company</h5>
                             <ul class="space-y-6">
@@ -51,7 +51,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="col-span-2 p-12">
+                        <div class="desktop-sm:col-span-2 p-12">
                             <h5>Newsletter</h5>
                             <div class="mt-10 space-y-6">
                                 Coming soon
@@ -62,10 +62,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="border-l border-border flex items-stretch divide-x divide-border col-span-1">
-                    <div class="flex-1"></div>
+                <div class="desktop-sm:border-l border-t desktop-sm:border-t-0 border-border flex desktop-sm:items-stretch justify-center divide-x divide-border col-span-1">
+                    <div class="flex-1 hidden desktop-sm:block"></div>
                     <div class="flex flex-col justify-center">
-                        <div class="divide-y divide-border border-y border-border">
+                        <div class="divide-x desktop-sm:divide-x-0 desktop-sm:divide-y divide-border desktop-sm:border-y border-border flex flex-row desktop-sm:flex-col border-r desktop-sm:border-r-0">
                             <div class="p-6">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20"><path fill="currentColor" d="M17.316 6.246c.008.162.011.326.011.488c0 4.99-3.797 10.742-10.74 10.742c-2.133 0-4.116-.625-5.787-1.697a7.577 7.577 0 0 0 5.588-1.562a3.779 3.779 0 0 1-3.526-2.621a3.858 3.858 0 0 0 1.705-.065a3.779 3.779 0 0 1-3.028-3.703v-.047a3.766 3.766 0 0 0 1.71.473a3.775 3.775 0 0 1-1.168-5.041a10.716 10.716 0 0 0 7.781 3.945a3.813 3.813 0 0 1-.097-.861a3.773 3.773 0 0 1 3.774-3.773a3.77 3.77 0 0 1 2.756 1.191a7.602 7.602 0 0 0 2.397-.916a3.789 3.789 0 0 1-1.66 2.088a7.55 7.55 0 0 0 2.168-.594a7.623 7.623 0 0 1-1.884 1.953z"/></svg>
                             </div>
