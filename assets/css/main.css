@@ -157,7 +157,7 @@ h3 {
 }
 
 h4 {
-    @apply text-body-gray-light text-[22px] desktop-lg:text-[30px] wide:text-[1.5wv] leading-snug;
+    @apply text-body-gray-light text-[22px] desktop-lg:text-[30px] wide:text-[1.5vw] leading-snug;
 }
 
 

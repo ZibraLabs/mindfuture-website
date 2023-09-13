@@ -69,7 +69,7 @@
             </div>
 
             <div class="col-span-4 w-full row-span-1">
-                <div class="easyid-nivo-parallax">
+                <div class="nivo-taastrup-parallax">
                     <div class="flex items-center space-x-12">
                         <div class="flex-1 relative h-[50vh]">
                             <div class="content glitch__delay__12">
