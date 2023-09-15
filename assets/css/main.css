@@ -232,6 +232,11 @@ video.fullscreen:-webkit-media-controls {
 
     @apply flex space-x-16 items-center justify-start whitespace-nowrap transition-all duration-1000 ease-in;
 }
+.text-scroll-fast {
+    animation: scrollTextFast 40s infinite linear;
+
+    @apply flex space-x-16 items-center justify-start whitespace-nowrap transition-all duration-1000 ease-in;
+}
 
 .slideInLeft, .slideInRight {
     opacity: 0;
@@ -285,6 +290,10 @@ video.fullscreen:-webkit-media-controls {
 @keyframes scrollText {
     from   { transform: translateX(0%); }
     to { transform: translateX(-50%); }
+}
+@keyframes scrollTextFast {
+    from   { transform: translateX(0%); }
+    to { transform: translateX(-230%); }
 }
 
 @keyframes slideInLeft {
