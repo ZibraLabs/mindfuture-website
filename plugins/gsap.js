@@ -95,33 +95,36 @@ export default defineNuxtPlugin((nuxtApp) => {
     function moveLogo () {
         let loadingBar = document.querySelector('#loading-bar-fill');
 
-        const timeline = gsap.timeline();
+        if (loadingBar) {
+            const timeline = gsap.timeline();
+    
+            timeline.to("#loading-bar-fill", {
+                duration: 1.5,
+                width: "100%",
+                onUpdate: () => {
+                    document.querySelector('#loading-amount').innerHTML = parseInt(loadingBar.style.width) + '%';
+                },
+            }, 0).to("#loading-bar-content", {
+                duration: 0.8,
+                opacity: 0,
+            }, "+=0.2").to("#logo-load", {
+                duration: 1.5,
+                x: 64,
+                y: 48,
+                width: 82.5,
+                height: 40,
+                transformOrigin: "top left",
+                ease: Power2.easeInOut,
+                onComplete: () => {
+                    init();
+                },
+            }, "+=0").to('#loading-full', {
+                duration: 1.2,
+                height: 0,
+                ease: Power2.easeInOut,
+            }, "-=1");
+        }
 
-        timeline.to("#loading-bar-fill", {
-            duration: 1.5,
-            width: "100%",
-            onUpdate: () => {
-                document.querySelector('#loading-amount').innerHTML = parseInt(loadingBar.style.width) + '%';
-            },
-        }, 0).to("#loading-bar-content", {
-            duration: 0.8,
-            opacity: 0,
-        }, "+=0.2").to("#logo-load", {
-            duration: 1.5,
-            x: 64,
-            y: 48,
-            width: 82.5,
-            height: 40,
-            transformOrigin: "top left",
-            ease: Power2.easeInOut,
-            onComplete: () => {
-                init();
-            },
-        }, "+=0").to('#loading-full', {
-            duration: 1.2,
-            height: 0,
-            ease: Power2.easeInOut,
-        }, "-=1");
     }
 
     function textAppear () {
@@ -336,19 +339,23 @@ export default defineNuxtPlugin((nuxtApp) => {
     }
 
     function growingLine () {
-        let parentContainer = document.querySelector('.growing-line').parentNode;
+        if (document.querySelector('.growing-line')) {
+            
+            let parentContainer = document.querySelector('.growing-line').parentNode;
+            
+            gsap.to('.growing-line', {
+                height: parentContainer.clientHeight,
+                ease: CustomEase.create("custom", "M0,0 C0.438,0.198 0.5,0.604 0.616,0.738 0.719,0.857 0.78,1 1,1 "),
+                scrollTrigger: {
+                    id: 'growingLine',
+                    trigger: '.growing-line',
+                    start: '0% 70%',
+                    end: parentContainer.clientHeight + 'px',
+                    markers: false,
+                },
+            });
+        }
 
-        gsap.to('.growing-line', {
-            height: parentContainer.clientHeight,
-            ease: CustomEase.create("custom", "M0,0 C0.438,0.198 0.5,0.604 0.616,0.738 0.719,0.857 0.78,1 1,1 "),
-            scrollTrigger: {
-                id: 'growingLine',
-                trigger: '.growing-line',
-                start: '0% 70%',
-                end: parentContainer.clientHeight + 'px',
-                markers: false,
-            },
-        });
     }
 
     function growBox () {
