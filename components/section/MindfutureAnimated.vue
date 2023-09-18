@@ -5,7 +5,8 @@
         </div>
         <div class="desktop-sm:flex desktop-sm:items-center desktop-sm:justify-start w-full desktop-sm:space-x-12 space-y-4 desktop-sm:space-y-0">
             <div>
-                <video src="@/assets/video/Mind.mp4" autoplay loop muted class="desktop-sm:h-[11vw]"></video>
+                <video src="@/assets/video/Mind.mp4" autoplay loop muted class="hidden desktop-sm:block desktop-sm:h-[11vw]"></video>
+                <img src="@/assets/video/Mind-anim.gif" class="desktop-sm:hidden w-full" />
             </div>
             <div>
                 <img src="@/assets/images/futuretext.svg" class="desktop-sm:h-[11vw]" />
