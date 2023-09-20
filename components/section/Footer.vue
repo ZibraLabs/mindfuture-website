@@ -79,6 +79,9 @@
                     </div>
                 </div>
             </div>
+            <div class="p-8">
+                <img src="@/assets/images/mindfuture.svg" class="w-full" />
+            </div>
         </footer>
     </section>
 </template>

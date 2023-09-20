@@ -1,7 +1,7 @@
 <template>
     <section class="w-full bg-section-background h-[70vh] desktop-sm:h-[50vw] flex items-center justify-center relative p-4 py-12 text-appear-container">
         <div class="space-y-8 desktop-sm:space-y-0 -mt-32">
-            <div class="overflow-hidden"><h3 class="text-appear">we are bringing you</h3></div>
+            <div class="overflow-hidden"><h4 class="text-appear">we are bringing you</h4></div>
             <div class="overflow-hidden"><h2 class="text-appear">the <span class="text-primary">next</span> big thing</h2></div>
         </div>
         <div class="absolute -bottom-2 left-1/4 text-primary h-[30vh] desktop-sm:h-[22vw]">
