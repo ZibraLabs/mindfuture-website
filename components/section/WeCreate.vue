@@ -7,7 +7,7 @@
                         <div class="space-y-8 desktop-sm:max-w-[40vw]">
                             <h4 class="hidden desktop-sm:block">no. 1</h4>
                             <h2 class="desktop-sm:text-primary capitalize desktop-sm:normal-case px-[6vw] desktop-sm:px-0"><span class="text-primary desktop-sm:hidden">1.</span> envision</h2>
-                            <video class="w-full desktop-sm:hidden" src="@/assets/video/envision.mp4" autoplay loop muted></video>
+                            <img class="w-full desktop-sm:hidden" src="@/assets/video/envision.gif" />
                             <div class="p-[6vw] desktop-sm:p-0 bg-button-background desktop-sm:bg-transparent space-y-[2vw] desktop-sm:w-4/5">
                                 <p>
                                     Envisioning for us means seeing the world in a new way. It means to innovate, notice patterns & trends and set up clear directions for the future. We encourage experimentation, open discussion and the freedom to think outside the box. We want our team members to fearlessly explore new technologies and ideas.
@@ -22,7 +22,7 @@
                         <div class="space-y-8 desktop-sm:max-w-[40vw]">
                             <h4 class="hidden desktop-sm:block">no. 2</h4>
                             <h2 class="desktop-sm:text-primary capitalize desktop-sm:normal-case px-[6vw] desktop-sm:px-0"><span class="text-primary desktop-sm:hidden">2.</span> connect</h2>
-                            <video class="w-full desktop-sm:hidden" src="@/assets/video/connect.mp4" autoplay loop muted></video>
+                            <img class="w-full desktop-sm:hidden" src="@/assets/video/connect.gif" />
                             <div class="p-[6vw] desktop-sm:p-0 bg-button-background desktop-sm:bg-transparent space-y-[2vw] desktop-sm:w-4/5">
                                 <p>
                                     We strive to achieve the ultimate synergies as we seamlessly connect diverse customer segments with cutting-edge technologies. Guided by our team of skilled experts driven by unwavering determination, we use the power of this fusion to propel our visions forward.
@@ -37,7 +37,7 @@
                         <div class="space-y-8 desktop-sm:max-w-[40vw]">
                             <h4 class="hidden desktop-sm:block">no. 3</h4>
                             <h2 class="desktop-sm:text-primary capitalize desktop-sm:normal-case px-[6vw] desktop-sm:px-0"><span class="text-primary desktop-sm:hidden">3.</span> create</h2>
-                            <video class="w-full desktop-sm:hidden" src="@/assets/video/create.mp4" autoplay loop muted></video>
+                            <img class="w-full desktop-sm:hidden" src="@/assets/video/create.gif" />
                             <div class="p-[6vw] desktop-sm:p-0 bg-button-background desktop-sm:bg-transparent space-y-[2vw] desktop-sm:w-4/5">
                                 <p>
                                     The final pillar is all about delivering a tangible solution that benefits people. We specialise in crafting groundbreaking technology products from start to finish, with our skillset spanning across both hardware and software.
@@ -52,9 +52,9 @@
             <div class="w-1 bg-secondary max-h-full h-0 growing-line hidden desktop-sm:block"></div>
             <div class="w-full desktop-sm:w-2/5 min-h-full animation-video-container hidden desktop-sm:block">
                 <div class="w-full animation-video relative">
-                    <img class="we-envision w-full opacity-0 absolute inset-0 mx-auto" src="@/assets/video/envision.gif" />
-                    <img class="we-connect w-full opacity-0 absolute inset-0 mx-auto" src="@/assets/video/connect.gif" />
-                    <img class="we-create w-full opacity-0 absolute inset-0 mx-auto" src="@/assets/video/create.gif" />
+                    <video class="we-envision w-full opacity-0 absolute inset-0 mx-auto" src="@/assets/video/envision.mp4" autoplay loop muted></video>
+                    <video class="we-connect w-full opacity-0 absolute inset-0 mx-auto" src="@/assets/video/connect.mp4" autoplay loop muted></video>
+                    <video class="we-create w-full opacity-0 absolute inset-0 mx-auto" src="@/assets/video/create.mp4" autoplay loop muted></video>
                     <div class="h-px w-full bg-body-gray-dark absolute top-[24vw] inset-x-0"></div>
                 </div>
             </div>
