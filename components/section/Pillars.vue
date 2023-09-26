@@ -1,6 +1,6 @@
 <template>
     <section class="overflow-hidden">
-        <div class="bg-secondary w-screen h-[60vh] desktop-sm:h-screen flex items-center justify-center pillar-box-section relative">
+        <div class="bg-secondary w-screen h-[60vh] desktop-sm:h-[1800px] flex items-center justify-center pillar-box-section relative">
             <div class="absolute inset-0 desktop-sm:mx-auto desktop-sm:top-[25vh] desktop-sm:w-[40vw] pl-24 pt-12 desktop-sm:pt-0">
                 <h4 class="text-background">and this is how</h4>
             </div>
@@ -23,10 +23,10 @@
                             <h1 class="leading-none text-primary">Pillars</h1>
                         </div>
                     </div>
-                    <div class="border-b border-border left-0 w-screen h-px hidden desktop-sm:block"></div>
+                    <!-- <div class="border-b border-border left-0 w-screen h-px hidden desktop-sm:block"></div>
                     <div class="flex items-baseline space-x-2">
                         <h4 class="text-body-gray-dark">3 pillars</h4> <h4 class="text-body-light">towards something great</h4>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>

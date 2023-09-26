@@ -361,7 +361,7 @@ export default defineNuxtPlugin((nuxtApp) => {
     function growBox () {
         gsap.to('.pillar-box', {
             width: '100vw',
-            height: '100vh',
+            height: '1800px',
             duration: 3,
             ease: CustomEase.create("custom", "M0,0 C0.438,0.198 0.5,0.604 0.616,0.738 0.719,0.857 0.78,1 1,1 "),
             scrollTrigger: {

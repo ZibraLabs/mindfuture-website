@@ -52,6 +52,7 @@
             <div class="w-1 bg-secondary max-h-full h-0 growing-line hidden desktop-sm:block"></div>
             <div class="w-full desktop-sm:w-2/5 min-h-full animation-video-container hidden desktop-sm:block">
                 <div class="w-full animation-video relative">
+                    <div class="h-px w-full bg-body-gray-dark absolute -top-4 inset-x-0"></div>
                     <video class="we-envision w-full opacity-0 absolute inset-0 mx-auto" src="@/assets/video/envision.mp4" autoplay loop muted></video>
                     <video class="we-connect w-full opacity-0 absolute inset-0 mx-auto" src="@/assets/video/connect.mp4" autoplay loop muted></video>
                     <video class="we-create w-full opacity-0 absolute inset-0 mx-auto" src="@/assets/video/create.mp4" autoplay loop muted></video>

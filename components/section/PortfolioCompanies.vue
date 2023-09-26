@@ -1,5 +1,5 @@
 <template>
-    <section class="glitches hidden desktop-sm:block mt-28">
+    <section class="glitches hidden desktop-sm:block mt-48">
         <div class="grid gap-8 gap-y-80 grid-cols-5 grid-rows-4 px-8">
             <div class="m2call-parallax relative w-full h-[60vh] col-span-3 row-span-1">
                 <div class="content glitch__delay__8">
