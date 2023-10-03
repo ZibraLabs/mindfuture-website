@@ -40,19 +40,19 @@
 						</NuxtLink>
 					</li>
 					<li>
-						<NuxtLink to="#" class="border-b border-border w-full group flex items-baseline gap-16 text-button-background hover:cursor-not-allowed">
+						<NuxtLink class="border-b border-border w-full group flex items-baseline gap-16 text-button-background hover:cursor-not-allowed">
 							<span>garages</span>
 							<!-- <IconNavArrow class="h-[3.5vh] hidden group-hover:block" /> -->
 						</NuxtLink>
 					</li>
 					<li>
-						<NuxtLink to="#" class="border-b border-border w-full group flex items-baseline gap-16 text-button-background hover:cursor-not-allowed">
+						<NuxtLink class="border-b border-border w-full group flex items-baseline gap-16 text-button-background hover:cursor-not-allowed">
 							<span>portfolio</span>
 							<!-- <IconNavArrow class="h-[3.5vh] hidden group-hover:block" /> -->
 						</NuxtLink>
 					</li>
 					<li>
-						<NuxtLink to="#" class="border-b border-border w-full group flex items-baseline gap-16 text-button-background hover:cursor-not-allowed">
+						<NuxtLink class="border-b border-border w-full group flex items-baseline gap-16 text-button-background hover:cursor-not-allowed">
 							<span>contact</span>
 							<!-- <IconNavArrow class="h-[3.5vh] hidden group-hover:block" /> -->
 						</NuxtLink>
