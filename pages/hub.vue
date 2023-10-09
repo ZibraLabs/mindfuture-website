@@ -24,7 +24,7 @@
                         </li>
                         <li class="flex items-center space-x-4">
                             <div class="w-4 wide:w-[0.5vw] aspect-square bg-primary"></div>
-                            <div>Complete catering service</div>
+                            <div>Complete catering service ( 1500,- DKK + VAT/mth )</div>
                         </li>
                         <li class="flex items-center space-x-4">
                             <div class="w-4 wide:w-[0.5vw] aspect-square bg-primary"></div>
@@ -59,9 +59,9 @@
             </div>
         </div>
         <div class="relative">
-            <!-- <video src="@/assets/video/hub.mp4" controls autoplay="1" loop muted class="grayscale"></video> -->
             <div class="absolute inset-0 z-10"></div>
-            <iframe class="w-full aspect-video" src="https://www.youtube.com/embed/DUkGA-Lq0nc?si=TdylCduWg_ekXUMk&autoplay=1&loop=1&controls=0&mute=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <video src="@/assets/video/Hub2.mp4" controls autoplay="1" loop muted class="grayscale contrast-125"></video>
+            <!-- <iframe class="w-full aspect-video" src="https://www.youtube.com/embed/DUkGA-Lq0nc?si=TdylCduWg_ekXUMk&autoplay=1&loop=1&controls=0&mute=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
         </div>
     </div>
 </template>
