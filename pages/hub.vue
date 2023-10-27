@@ -112,7 +112,7 @@
             </div>
         </div>
         <div>
-            <iframe src="https://my.matterport.com/show/?m=FWJNU5x2Efw&play=1" frameborder="0" class="w-full h-[800px]"></iframe>
+            <iframe src="https://my.matterport.com/show/?m=J3keVFZGoGr&play=1" frameborder="0" allowfullscreen allow="xr-spatial-tracking" class="w-full h-[800px]"></iframe>
         </div>
     </div>
 </template>
