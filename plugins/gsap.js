@@ -8,13 +8,17 @@ export default defineNuxtPlugin((nuxtApp) => {
         moveLogo();
     });
 
+    window.onpopstate = function () {
+        moveLogo();
+    };
+
     function init () {
         gsap.registerPlugin(ScrollTrigger);
         gsap.registerPlugin(ScrollSmoother);
         gsap.registerPlugin(CustomEase);
         gsap.registerPlugin(DrawSVGPlugin);
     
-        ScrollTrigger.normalizeScroll(true)
+        ScrollTrigger.normalizeScroll(true);
     
         // create the smooth scroller FIRST!
         ScrollSmoother.create({
