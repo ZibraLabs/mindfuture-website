@@ -97,23 +97,38 @@ export default defineNuxtPlugin((nuxtApp) => {
     }
 
     function moveLogo () {
-        let loadingBar = document.querySelector('#loading-bar-fill');
+        gsap.registerPlugin(DrawSVGPlugin);
 
-        if (loadingBar) {
-            const timeline = gsap.timeline();
-    
-            timeline.to("#loading-bar-fill", {
-                duration: 1.5,
-                width: "100%",
+        let loadingBar = document.querySelector('#loading-bar-fill');
+        let loadingLogoPath = document.querySelector('#loading-logo-path');
+
+        if (loadingLogoPath) {
+            const timeline = gsap.timeline({
                 onUpdate: () => {
-                    document.querySelector('#loading-amount').innerHTML = parseInt(loadingBar.style.width) + '%';
+                }
+            });
+
+            gsap.set("#loading-logo-path", {visibility:"visible"});
+    
+            timeline.from("#loading-logo-path", {
+                duration: 1.5,
+                ease: "power3.out",
+                drawSVG: "0% 0%",
+                onUpdate: () => {
+                    let percentage = Math.ceil((timeline.progress() / 0.36) * 100);
+                    
+                    if (percentage > 99) {
+                        percentage == 100;
+                    }
+
+                    document.querySelector('#loading-amount').innerHTML = percentage + '%';
                 },
             }, 0).to("#loading-bar-content", {
                 duration: 0.8,
                 opacity: 0,
             }, "+=0.2").to("#logo-load", {
                 duration: 1.5,
-                x: 64,
+                x: 48,
                 y: 48,
                 width: 82.5,
                 height: 40,

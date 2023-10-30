@@ -169,6 +169,12 @@ body, p {
     @apply text-base wide:text-[0.8vw] wide:leading-[1.2vw];
 }
 
+#loading-logo-path {
+    fill: none;
+    stroke-width: 72px;
+    visibility: hidden;
+}
+
 .mindfuture {
     font-family: 'Hellix', sans-serif;
 }
