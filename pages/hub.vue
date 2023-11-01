@@ -5,9 +5,9 @@
                 <h2>MF <span class="text-secondary">HUB</span></h2>
             </div>
         </div>
-        <div class="relative">
+        <div class="relative bg-body-gray-dark w-full aspect-video">
             <div class="absolute inset-0 z-10"></div>
-            <video src="@/assets/video/Hub2.mp4" controls autoplay="1" loop muted class="grayscale contrast-125"></video>
+            <video src="@/assets/video/Hub2.mp4" controls="false" autoplay="1" loop muted class="grayscale contrast-125"></video>
         </div>
         <div class="grid desktop-sm:grid-cols-2 grid-cols-1 gap-6 desktop-sm:gap-12">
             <div class="bg-button-background p-4 desktop-sm:p-12 aspect-square flex items-center justify-center">
