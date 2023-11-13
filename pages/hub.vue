@@ -33,15 +33,15 @@
                         </li>
                         <li class="flex items-center space-x-4">
                             <div class="w-4 wide:w-[0.5vw] aspect-square bg-primary"></div>
-                            <div>State of the art event facilities</div>
+                            <div>Networking and social events</div>
+                        </li>
+                        <li class="flex items-center space-x-4">
+                            <div class="w-4 wide:w-[0.5vw] aspect-square bg-primary"></div>
+                            <div>Free parking and wi-fi</div>
                         </li>
                         <li class="flex items-center space-x-4">
                             <div class="w-4 wide:w-[0.5vw] aspect-square bg-primary"></div>
                             <div>Close to freeway and public transport</div>
-                        </li>
-                        <li class="flex items-center space-x-4">
-                            <div class="w-4 wide:w-[0.5vw] aspect-square bg-primary"></div>
-                            <div>Networking and social events</div>
                         </li>
                     </ul>
                 </div>
@@ -51,7 +51,7 @@
                     <h4 class="uppercase text-secondary">Join us in the<br class="block desktop-sm:hidden" /> MindFuture Hub</h4>
                     <h3 class="mt-12 text-body-gray-dark">Workspace</h3>
                     <div class="flex items-baseline space-x-4"><h2 class="text-primary">2.900,- <h5 class="text-body-light">DKK + VAT/mth</h5></h2></div>
-                    <h5 class="mt-6">Contact the HUB Manager</h5>
+                    <h5 class="mt-6">Contact our HUB Manager</h5>
                 </div>
             </div>
         </div>
@@ -68,27 +68,27 @@
                     <ul class="space-y-4 desktop-sm:space-y-8">
                         <li class="flex items-center space-x-4">
                             <div class="w-4 wide:w-[0.5vw] aspect-square bg-primary"></div>
-                            <div>State of the art <b>event facilities</b></div>
+                            <div>State of the art event facilities</div>
                         </li>
                         <li class="flex items-center space-x-4">
                             <div class="w-4 wide:w-[0.5vw] aspect-square bg-primary"></div>
-                            <div>Inspiring <b>meeting rooms</b></div>
+                            <div>Inspiring meeting rooms</div>
                         </li>
                         <li class="flex items-center space-x-4">
                             <div class="w-4 wide:w-[0.5vw] aspect-square bg-primary"></div>
-                            <div>Complete <b>catering service</b></div>
+                            <div>Complete catering service</div>
                         </li>
                         <li class="flex items-center space-x-4">
                             <div class="w-4 wide:w-[0.5vw] aspect-square bg-primary"></div>
-                            <div>Unique <b>event planning</b></div>
+                            <div>Unique event planning</div>
                         </li>
                         <li class="flex items-center space-x-4">
                             <div class="w-4 wide:w-[0.5vw] aspect-square bg-primary"></div>
-                            <div>Free <b>parking</b> and <b>wi-fi</b></div>
+                            <div>Free parking and wi-fi</div>
                         </li>
                         <li class="flex items-center space-x-4">
                             <div class="w-4 wide:w-[0.5vw] aspect-square bg-primary"></div>
-                            <div>Close to <b>freeway</b> and <b>public transportation</b></div>
+                            <div>Close to freeway and public transportation</div>
                         </li>
                     </ul>
                 </div>
@@ -96,7 +96,7 @@
             <div class="bg-button-background p-4 desktop-sm:p-12 aspect-square flex items-center justify-center">
                 <div>
                     <h4 class="uppercase text-secondary">Events / Meetings<br />at MindFuture Hub</h4>
-                    <h5 class="mt-6 text-body-light">Contact the HUB Manager for the price</h5>
+                    <h5 class="mt-6 text-body-light">Contact our HUB Manager for more information, booking, and prices</h5>
                 </div>
             </div>
         </div>
@@ -106,7 +106,7 @@
                     <img src="@/assets/images/hub/henriette.jpg" class="w-full aspect-square object-cover grayscale hover:grayscale-0 transition-all duration-500" />
                     <p class="mt-4">
                         <b class="uppercase">Henriette Lundqvist</b><br />
-                        <small><b>Hub Manager</b></small><br />
+                        <small><b>HUB Manager</b></small><br />
                         <small><a href="mailto:hll@mindfuture.com">hll@mindfuture.com</a><br />
                         <a href="tel:+4531192182">tlf: +45 31192182</a></small>
                     </p>
