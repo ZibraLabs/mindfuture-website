@@ -141,50 +141,59 @@
             </div>
         </div>
         <div class="grid grid-cols-3 w-full gap-6 desktop-sm:gap-12">
-            <div @click="toggleScaleClass" class="cursor-zoom-in relative">
-                <img src="@/assets/images/hub/0.jpg" class="object-cover grayscale w-full h-full" />
+            <div @click="toggleScaleClass" class="cursor-zoom-in">
+                <img src="@/assets/images/hub/gallery/01.jpg" class="object-cover grayscale w-full h-full" />
             </div>
             <div @click="toggleScaleClass" class="cursor-zoom-in">
-                <img src="@/assets/images/hub/1.jpg" class="object-cover grayscale w-full h-full" />
+                <img src="@/assets/images/hub/gallery/02.jpg" class="object-cover grayscale w-full h-full" />
             </div>
             <div @click="toggleScaleClass" class="cursor-zoom-in">
-                <img src="@/assets/images/hub/2.jpg" class="object-cover grayscale w-full h-full" />
+                <img src="@/assets/images/hub/gallery/03.jpg" class="object-cover grayscale w-full h-full" />
             </div>
             <div @click="toggleScaleClass" class="cursor-zoom-in">
-                <img src="@/assets/images/hub/3.jpg" class="object-cover grayscale w-full h-full" />
+                <img src="@/assets/images/hub/gallery/04.jpg" class="object-cover grayscale w-full h-full" />
             </div>
             <div @click="toggleScaleClass" class="cursor-zoom-in">
-                <img src="@/assets/images/hub/4.jpg" class="object-cover grayscale w-full h-full" />
+                <img src="@/assets/images/hub/gallery/05.png" class="object-cover grayscale w-full h-full" />
             </div>
             <div @click="toggleScaleClass" class="cursor-zoom-in">
-                <img src="@/assets/images/hub/5.jpg" class="object-cover grayscale w-full h-full" />
+                <img src="@/assets/images/hub/gallery/06.jpg" class="object-cover grayscale w-full h-full" />
             </div>
             <div @click="toggleScaleClass" class="cursor-zoom-in">
-                <img src="@/assets/images/hub/6.jpg" class="object-cover grayscale w-full h-full" />
+                <img src="@/assets/images/hub/gallery/07.jpg" class="object-cover grayscale w-full h-full" />
             </div>
             <div @click="toggleScaleClass" class="cursor-zoom-in">
-                <img src="@/assets/images/hub/7.jpg" class="object-cover grayscale w-full h-full" />
+                <img src="@/assets/images/hub/gallery/08.jpg" class="object-cover grayscale w-full h-full" />
             </div>
             <div @click="toggleScaleClass" class="cursor-zoom-in">
-                <img src="@/assets/images/hub/8.jpg" class="object-cover grayscale w-full h-full" />
+                <img src="@/assets/images/hub/gallery/09.jpg" class="object-cover grayscale w-full h-full" />
             </div>
             <div @click="toggleScaleClass" class="cursor-zoom-in">
-                <img src="@/assets/images/hub/9.jpg" class="object-cover grayscale w-full h-full" />
+                <img src="@/assets/images/hub/gallery/10.jpg" class="object-cover grayscale w-full h-full" />
             </div>
             <div @click="toggleScaleClass" class="cursor-zoom-in">
-                <img src="@/assets/images/hub/10.jpg" class="object-cover grayscale w-full h-full" />
+                <img src="@/assets/images/hub/gallery/11.jpg" class="object-cover grayscale w-full h-full" />
             </div>
             <div @click="toggleScaleClass" class="cursor-zoom-in">
-                <img src="@/assets/images/hub/11.jpg" class="object-cover grayscale w-full h-full" />
+                <img src="@/assets/images/hub/gallery/12.jpg" class="object-cover grayscale w-full h-full" />
             </div>
             <div @click="toggleScaleClass" class="cursor-zoom-in">
-                <img src="@/assets/images/hub/12.jpg" class="object-cover grayscale w-full h-full" />
+                <img src="@/assets/images/hub/gallery/13.jpg" class="object-cover grayscale w-full h-full" />
             </div>
             <div @click="toggleScaleClass" class="cursor-zoom-in">
-                <img src="@/assets/images/hub/13.jpg" class="object-cover grayscale w-full h-full" />
+                <img src="@/assets/images/hub/gallery/14.jpg" class="object-cover grayscale w-full h-full" />
             </div>
             <div @click="toggleScaleClass" class="cursor-zoom-in">
-                <img src="@/assets/images/hub/14.jpg" class="object-cover grayscale w-full h-full" />
+                <img src="@/assets/images/hub/gallery/15.jpg" class="object-cover grayscale w-full h-full" />
+            </div>
+            <div @click="toggleScaleClass" class="cursor-zoom-in">
+                <img src="@/assets/images/hub/gallery/16.jpg" class="object-cover grayscale w-full h-full" />
+            </div>
+            <div @click="toggleScaleClass" class="cursor-zoom-in">
+                <img src="@/assets/images/hub/gallery/17.jpg" class="object-cover grayscale w-full h-full" />
+            </div>
+            <div @click="toggleScaleClass" class="cursor-zoom-in">
+                <img src="@/assets/images/hub/gallery/18.jpg" class="object-cover grayscale w-full h-full" />
             </div>
         </div>
         <div>
